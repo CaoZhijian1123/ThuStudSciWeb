@@ -1,0 +1,146 @@
+/* CSS Document */
+/*author: Meng Jiao
+	date:2020-2-11 20:30 
+	version:1.0.1 */
+* {
+  box-sizing: border-box;
+}
+		
+body {
+  font-family: Arial;
+  padding: 10px;
+  background:#F1F1F1;
+	margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+ 
+/* 头部标题 */
+.header {
+  padding: 15px;
+  text-align: center;
+  background: white;
+}
+ 
+.header h1 {
+    font-size: 40px;
+    text-align: left;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+ 
+/* 导航条链接 */
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+
+.topnav a:hover {
+  background-color: #686262;
+  color: #FFFFFF;
+}
+
+
+
+/*目录*/
+ .list{
+	overflow: hidden;
+	 border-style: solid;
+	border-width:2px ;
+	border-color: #1D2153;
+		}
+/*目录链接*/
+.list a {
+  display: block;
+  color: #f2f2f2;
+	background-color: #1D2153;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 2px;
+  text-decoration: none;
+}	
+	/* 目录颜色修改 */
+.list a:hover {
+  background-color: #193E73;
+  color: #FFFFFF;
+}
+ 
+/* 左侧栏 */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+	margin-top: 10px;
+	background-color: #F1F1F1;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+ float: right;
+  width: 74%;
+  background-color: #FFFFFF;
+   padding-left: 20px;
+   margin-top: 10px;
+	border-style: solid;
+	border-width:2px ;
+	border-color: #1D2153;
+}
+/*文字和标题*/
+h1{
+	font-family:Times, "Times New Roman", "serif";
+	font-size: 40px;
+}
+
+h2{
+	font-family: Times, "Times New Roman", "serif";
+	font-size:20px;
+}
+p{
+	font-family: Times, "Times New Roman", "serif";
+	font-size:15px;
+	margin-bottom: 15px;
+}
+/*列表*/
+.ulone li{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif";
+	font-size: 20px;
+	margin-bottom: 10px;
+	
+}
+
+
+
+/*圆角*/
+.rcorners1 {
+    border-radius: 3px;
+    border: 2px solid #1D2153;
+    padding: 5px; 
+	margin:0px 0px 2px 0px;
+    width: 100%; 
+	background-color: #FEFEFE;
+}
+ 
+
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+	height: 200px;
+}
+
+

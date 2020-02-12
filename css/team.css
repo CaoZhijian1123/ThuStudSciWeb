@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+/*author: Fengyou Cao 
+date：2020-2-10 11:38
+version:1.0.1*/
+
+	* html .clearfix {
+		zoom: 1;
+	}
+
+	*+html .clearfix {
+		zoom: 1;
+	}
+
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+
+
+#main {
+	width: 1100px;
+	margin: 0 auto;
+}
+#main .lBox {
+	width: 20%;
+	float: left;
+	background-color: #F3F3F3;
+}
+#main .rBox {
+	width: 78%;
+	float: right;
+}
+#main .lBox h2 {
+	background-color: #1392F1;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 0;
+	padding: 15px;
+	margin-bottom: 2px;
+}
+#main .sNavi {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#main .sNavi li {
+	line-height: 30px;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	padding: 6px 20px;
+}
+#main .sNavi li:hover, #main .sNavi li.on {
+	background-color: #F3F3F3;
+	border-left: 4px solid #1392F1;
+	color: #1392F1;
+}
+
+#main .rBox h3 {
+	margin-top: 0;
+	padding-top: 5px;
+}
+
+#main .rBox .textBox {
+	float: left;
+}
+#main .rBox .photoBox {
+	float: right;
+}
+#main h3 span {
+	font-size: 24px;
+	color: #000;
+	background: url(../media/images/team_ico01.png) no-repeat center right;
+	padding-right: 40px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+#main h3 p {
+	color: #cccccc;
+	font-size: 16px;
+	margin: 6px 0 0;
+	font-weight: normal;
+}
+
+#main h4 {
+	margin: 15px 0 10px;
+}
+
+#main h4 span{
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding: 0;
+	font-weight: bold;
+}
+
+#main h4 p{
+	font-size:14px;
+	color: #cccccc;
+	font-weight: normal;
+	margin: 6px 0 0 0;
+	line-height: 20px;
+}
+#main .bigBox{
+	width:886px;
+	margin-right: -28px;
+	overflow:hidden;
+	zoom:1;
+}
+#main .depBox > p {
+	line-height: 22px;
+	margin: 0;
+	font-size: 14px;
+}
+#main .imgBox{
+	background: #f3f2f6;
+	float:left;
+	margin: 0 28px 20px 0;
+	width: 415px;
+	zoom: 1;
+	position: relative;
+}
+#main .texBox{
+	float:right;
+	width:260px;
+	padding: 10px 15px 10px 0;
+}
+#main .texBox .name{
+	color: #1392f1 ;
+	font-size: 22px;
+	margin:0;
+	line-height: 30px;
+}
+#main .texBox .from{
+	color: #999 ;
+	font-size: 16px;
+	margin:0;
+	border-bottom: 1px #cccccc solid; 
+	line-height: 30px;
+	padding:0 0 3px;
+	margin-bottom: 5px;
+}
+
+#main .texBox .content{
+	color: #333 ;
+	font-size: 13px;
+	margin:0;
+	line-height: 22px;
+}
+#main .phoBox{
+	float: left;
+	width: 130px;
+	height:160px;
+	padding:1px;
+	
+}

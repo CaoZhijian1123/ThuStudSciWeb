@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+.up {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h2 class="up">赛事
+</h2>
+<hr />
+<script type="text/javascript" src="jquery.js"></script>
+
+<div class="lBox">
+	<ul class="sNavi">
+        结构设计大赛
+		<li>赛题回顾</li>
+		<li class="on">照片集锦</li>
+        交通科技竞赛
+        <li>赛题回顾</li>
+        <li>照片集锦</li>
+        未来城市与基础建设创新大赛
+         <li>赛题回顾</li>
+        <li>照片集锦</li>
+        房地产创新创业邀请赛
+         <li>赛题回顾</li>
+        <li>照片集锦</li>
+        趣味结赛
+         <li>赛题回顾</li>
+        <li>照片集锦</li>
+        地下空间创意大赛
+		<li>赛题回顾</li>
+        <li>照片集锦</li>
+	</ul>
+</div>
+<div class="rBox">
+	<div class="libaoBigBox">
+		<div class="yxjsbox libaoBox" style="display: block;">
+			<h1 class="bt">结构设计大赛赛题</h1>
+		</div>
+		<div class="libaoBox" style="display: none;"> 结构设计大赛照片 </div>
+		<div class="libaoBox" style="display: none;"> 交赛赛题</div>
+        <div class="libaoBox" style="display: none;"> 交赛照片</div>
+        <div class="libaoBox" style="display: none;"> 未创赛题</div>
+         <div class="libaoBox" style="display: none;"> 未创照片</div>
+         <div class="libaoBox" style="display: none;"> 房赛赛题</div>
+         <div class="libaoBox" style="display: none;"> 房赛照片</div>
+         <div class="libaoBox" style="display: none;"> 趣味结赛赛题</div>
+         <div class="libaoBox" style="display: none;"> 趣味结赛照片</div>
+         <div class="libaoBox" style="display: none;"> 地创赛题</div>
+         <div class="libaoBox" style="display: none;"> 地创照片</div>
+	</div>
+</div>
+<script>
+   $(".sNavi li").click(function(){
+  var nIndex=$(this).index();
+  $(this).addClass("on").siblings().removeClass("on");
+  $(".libaoBigBox .libaoBox").eq(nIndex).show().siblings().hide();
+});
+</script>
+</body>
+</html>

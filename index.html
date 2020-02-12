@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    author: Yi Gu
+    date: 2020-2-8 11:38
+    version: 1.0.0
+  -->
+  <head>
+    <meta name="generator" content="Hexo 3.8.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>
+      土木建管系科协
+    </title>
+
+    <meta name="keywords" content="技术;科研;学习;软件;" />
+    <meta name="description" content="这里需要日后在描述……" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- meta -->
+
+    <!-- link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="/media/images/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="/css/index_main.css" />
+
+    <script>
+      function setLoadingBarProgress(num) {
+        document.getElementById("loading-bar").style.width = num + "%";
+      }
+    </script>
+
+    <!--引入bootstrap-->
+    <script
+      src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <!--    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+    <!--            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+    <!--            crossorigin="anonymous"></script>-->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <!--    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>-->
+    <!--引入swiper css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/CL0610/codercc-cdn@1.6/css/swiper.min.css"
+    />
+    <!-- 引入swiper js-->
+    <script src="https://cdn.jsdelivr.net/gh/CL0610/codercc-cdn@1.6/js/swiper/swiper.min.js"></script>
+    <!--animate.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="l_body" style="opacity: 0">
+      <div id="loading-bar-wrapper">
+        <div id="loading-bar" class="pure"></div>
+      </div>
+      <script>
+        setLoadingBarProgress(20);
+      </script>
+      <header class="l_header pure">
+        <div class="wrapper">
+          <div class="nav-main container container--flex">
+            <a class="logo flat-box" href="/">
+              <img class="logo" src="/media/images/index_logo.png" />
+            </a>
+            <div class="menu">
+              <ul class="h-list">
+                <li>
+                  <a id="home" class="nav flat-box" href="/">
+                    <i class="fas fa-rss fa-fw"></i>&nbsp;综合
+                  </a>
+                </li>
+                <li>&nbsp;</li>
+                <div class="dropdown">
+                  <i class="fas fa-folder-open fa-fw"></i>
+                  <span>精彩赛事</span>
+                  <i class="fa fa-caret-down nav-more-i"></i>
+                  <div class="dropdown-content">
+                    <div class="detail-area">
+                      <!--当前是一级分类-->
+                      <h2 class="detail-title-wrapper">
+                        <a
+                          class="detail-title"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >结赛</a
+                        >
+                        <a
+                          class="detail-more"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >更多 ></a
+                        >
+                      </h2>
+                      <div class="detail-content">
+                        <!--查找每个一级分类下所有的二级分类-->
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/struct-design-competition"
+                          target="_blank"
+                          >结构设计大赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/fun-struct-design-competition"
+                          target="_blank"
+                          >趣味结赛</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="detail-area">
+                      <!--当前是一级分类-->
+                      <h2 class="detail-title-wrapper">
+                        <a
+                          class="detail-title"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >其他赛事</a
+                        >
+                        <a
+                          class="detail-more"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >更多 ></a
+                        >
+                      </h2>
+                      <div class="detail-content">
+                        <!--查找每个一级分类下所有的二级分类-->
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/traffic-competition"
+                          target="_blank"
+                          >交赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/future-competition"
+                          target="_blank"
+                          >未创</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/house-competition"
+                          target="_blank"
+                          >房赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/floor-competition"
+                          target="_blank"
+                          >地创</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li>&nbsp;</li>
+                <li>
+                  <a id="tags" class="nav flat-box" href="/pages/team.html">
+                    <i class="fas fa-user fa-fw"></i>&nbsp;团队介绍
+                  </a>
+                </li>
+
+                <li>
+                  <a id="tags" class="nav flat-box" href="/pages/software.html">
+                    <i class="fas fa-hashtag fa-fw"></i>&nbsp;常用软件
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    id="archives"
+                    class="nav flat-box"
+                    href="/pages/contact.html"
+                  >
+                    <i class="fas fa-archive fa-fw"></i>&nbsp;联系我们
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="m_search">
+              <form name="searchform" class="form u-search-form">
+                <input
+                  type="text"
+                  class="input u-search-input"
+                  placeholder="搜索"
+                />
+                <span class="icon"><i class="fas fa-search fa-fw"></i></span>
+              </form>
+            </div>
+
+            <ul class="switcher h-list">
+              <li class="s-search">
+                <a class="fas fa-search fa-fw" href="javascript:void(0)"></a>
+              </li>
+
+              <li class="s-menu">
+                <a class="fas fa-bars fa-fw" href="javascript:void(0)"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-sub container container--flex">
+            <a class="logo flat-box"></a>
+            <ul class="switcher h-list">
+              <li class="s-comment">
+                <a
+                  class="flat-btn fas fa-comments fa-fw"
+                  href="javascript:void(0)"
+                ></a>
+              </li>
+              <li class="s-toc">
+                <a
+                  class="flat-btn fas fa-list fa-fw"
+                  href="javascript:void(0)"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <aside class="menu-phone">
+        <header>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a id="home" class="nav flat-box" href="/">
+                  <i class="fas fa-rss fa-fw"></i>&nbsp;综合
+                </a>
+              </li>
+
+              <li>
+                <a
+                  id="categories"
+                  class="nav flat-box"
+                  href="/pages/event.html"
+                >
+                  <i class="fas fa-folder-open fa-fw"></i>&nbsp;精彩赛事
+                </a>
+              </li>
+
+              <li>
+                <a id="tags" class="nav flat-box" href="/pages/team.html">
+                  <i class="fas fa-user fa-fw"></i>&nbsp;团队介绍
+                </a>
+              </li>
+
+              <li>
+                <a id="tags" class="nav flat-box" href="/pages/software.html">
+                  <i class="fas fa-hashtag fa-fw"></i>&nbsp;常用软件
+                </a>
+              </li>
+
+              <li>
+                <a
+                  id="archives"
+                  class="nav flat-box"
+                  href="/pages/contact.html"
+                >
+                  <i class="fas fa-archive fa-fw"></i>&nbsp;联系我们
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </aside>
+
+      <script>
+        setLoadingBarProgress(40);
+      </script>
+
+      <!-- 顶部-->
+
+      <section class="top">
+        <div class="row wrapper">
+          <div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 banner">
+            <div class="swiper-container" id="homepage-banner-top">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide slide-1"
+                  style="width: 371px;height: 231px"
+                >
+                  <a class="top-banner-href" href="#"></a>
+                  <img
+                    src="/media/images/index_more.jpg"
+                    class="swiper-lazy"
+                    alt="点击查看详情"
+                  />
+                  <div
+                    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                  ></div>
+                </div>
+
+                <div
+                  class="swiper-slide slide-2"
+                  style="width: 371px;height: 231px"
+                >
+                  <a class="top-banner-href" href="#"></a>
+                  <img
+                    src="/media/images/index_more.jpg"
+                    class="swiper-lazy"
+                    alt="点击查看详情"
+                  />
+                  <div
+                    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                  ></div>
+                </div>
+
+                <div
+                  class="swiper-slide slide-3"
+                  style="width: 371px;height: 231px"
+                >
+                  <a class="top-banner-href" href></a>
+                  <img
+                    src="/media/images/index_more.jpg"
+                    class="swiper-lazy"
+                    alt="点击查看详情"
+                  />
+                  <div
+                    class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                  ></div>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: center">
+                <div class="swiper-pagination"></div>
+              </div>
+              <div
+                class="swiper-button-prev swiper-button-white"
+                style=" width: 28px; height: 20px;"
+              ></div>
+              <!--左箭头-->
+              <div
+                class="swiper-button-next swiper-button-white"
+                style=" width: 28px; height: 20px;"
+              ></div>
+              <!--右箭头-->
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 top-recommend">
+            <div class="top-recommend-header">
+              <span>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/CL0610/codercc-cdn@1.6/img/default-config/top_hot.png"
+                  height="20px"
+                  style="display: inline"
+                />
+                <span>热门资讯</span>
+              </span>
+            </div>
+            <div id="top-hot-articles">
+              <div class="content pure">
+                <div
+                  class="row"
+                  style="display: flex; align-items: center; width: 100%"
+                >
+                  <div
+                    class="col-md-12 col-xs-12 col-sm-12 col-lg-12 popular-post"
+                  >
+                    <div class="row" style="display: flex; align-items: center">
+                      <div
+                        class="col-md-9 col-xs-9 col-sm-9 col-lg-9"
+                        style="padding-left: 0"
+                      >
+                        <div class="row">
+                          <a title="点击阅读全文" href="#" class="title">
+                            <span>深入理解陈旺主席</span>
+                          </a>
+                        </div>
+                        <div class="row">
+                          <span class="popular-post-excerpt"
+                            >在生活中的陈旺主席到底如何，我们来听听他的舍友怎么说</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-3 col-xs-3 col-sm-3 col-lg-3 popular-post-thumbnail"
+                        style="padding-left: 0"
+                      >
+                        <a title="点击阅读全文" href="#" class="thumbnail">
+                          <img
+                            src="/media/images/index_more.jpg"
+                            alt="点击阅读全文"
+                            style="height: 55px"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="row"
+                  style="display: flex; align-items: center; width: 100%"
+                >
+                  <div
+                    class="col-md-12 col-xs-12 col-sm-12 col-lg-12 popular-post"
+                  >
+                    <div class="row" style="display: flex; align-items: center">
+                      <div
+                        class="col-md-9 col-xs-9 col-sm-9 col-lg-9"
+                        style="padding-left: 0"
+                      >
+                        <div class="row">
+                          <a title="点击阅读全文" href="#" class="title">
+                            <span
+                              >震惊！陈旺主席在生活中竟然是这样一个人……</span
+                            >
+                          </a>
+                        </div>
+                        <div class="row">
+                          <span class="popular-post-excerpt"
+                            >原谅我做一次标题党……在生活中的陈旺主席到底如何，我们来听听他的舍友怎么说</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-3 col-xs-3 col-sm-3 col-lg-3 popular-post-thumbnail"
+                        style="padding-left: 0"
+                      >
+                        <a title="点击阅读全文" href="#" class="thumbnail">
+                          <img
+                            src="/media/images/index_more.jpg"
+                            alt="点击阅读全文"
+                            style="height: 55px"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="row"
+                  style="display: flex; align-items: center; width: 100%"
+                >
+                  <div
+                    class="col-md-12 col-xs-12 col-sm-12 col-lg-12 popular-post"
+                  >
+                    <div class="row" style="display: flex; align-items: center">
+                      <div
+                        class="col-md-9 col-xs-9 col-sm-9 col-lg-9"
+                        style="padding-left: 0"
+                      >
+                        <div class="row">
+                          <a title="点击阅读全文" href="#" class="title">
+                            <span>深入理解陈旺主席</span>
+                          </a>
+                        </div>
+                        <div class="row">
+                          <span class="popular-post-excerpt"
+                            >在生活中的陈旺主席到底如何，我们来听听他的舍友怎么说</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="col-md-3 col-xs-3 col-sm-3 col-lg-3 popular-post-thumbnail"
+                        style="padding-left: 0"
+                      >
+                        <a title="点击阅读全文" href="#" class="thumbnail">
+                          <img
+                            src="/media/images/index_more.jpg"
+                            alt="点击阅读全文"
+                            style="height: 55px"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row wrapper">
+        <div class="col-md-9 col-xs-9 col-sm-9 col-lg-9 left-main-container">
+          <div class="l_main">
+            <!-- 内容-->
+
+            <section class="post-list">
+              <!-- 标签页-->
+
+              <!-- 获取当前所有的一级分类-->
+
+              <!-- 当前所选中的一级分类 -->
+
+              <!-- 未选择一级分类时默认选中第一个 -->
+
+              <!-- 可视化所有的一级二级分类 -->
+
+              <ul class="nav-container">
+                <li class="nav-tab active">
+                  <a href="/">
+                    新闻
+                  </a>
+                </li>
+
+                <li class="nav-tab ">
+                  <a href="/pages/event.html">
+                    精彩赛事
+                  </a>
+                </li>
+
+                <li class="nav-tab ">
+                  <a href="/pages/software.html">
+                    软件资源
+                  </a>
+                </li>
+
+                <li class="nav-tab book-arrow" id="book-arrow">
+                  <a href="/pages/event.html" class="book-link">
+                    <span
+                      >&nbsp; &nbsp; &nbsp; 更多 &nbsp; &nbsp;
+                      <i class="fas fa-arrow-right fa-fw"></i
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- 当前所选一级分类下所有的二级分类-->
+
+              <div class="row post-tag-container">
+                <a href="/pages/event.html">
+                  <span class="label label-default tag ">
+                    结赛资讯
+                  </span>
+                </a>
+                <a href="/pages/software.html">
+                  <span class="label label-default tag ">
+                    软件破解
+                  </span>
+                </a>
+                <a href="/pages/event.html">
+                  <span class="label label-default tag ">
+                    其他资讯
+                  </span>
+                </a>
+              </div>
+
+              <!-- 需要数据进行分页 -->
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoCAD 2014安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoCAD安装过程中遇到的大部分问题，文末提供AutoCAD安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-24
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          Revit 2014安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了Revit安装过程中遇到的大部分问题，文末提供Revit安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-24
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoDesk全系列软件安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoDesk全系列软件安装过程中遇到的大部分问题，文末提供AutoDesk全系列软件安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-23
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoDesk全系列软件安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoDesk全系列软件安装过程中遇到的大部分问题，文末提供AutoDesk全系列软件安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-23
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoDesk全系列软件安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoDesk全系列软件安装过程中遇到的大部分问题，文末提供AutoDesk全系列软件安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-23
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoDesk全系列软件安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoDesk全系列软件安装过程中遇到的大部分问题，文末提供AutoDesk全系列软件安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-23
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoDesk全系列软件安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoDesk全系列软件安装过程中遇到的大部分问题，文末提供AutoDesk全系列软件安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-23
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="post-wrapper" style="margin-top: 15px">
+                <article class="post reveal " style="padding-top: 15px ">
+                  <div class="row homepage-post">
+                    <div
+                      class="col-md-9 col-xs-9 col-sm-9 col-lg-9  left-content"
+                    >
+                      <h2 class="title">
+                        <a href="/post/bc790cc0.html">
+                          AutoDesk全系列软件安装与破解教程
+                        </a>
+                      </h2>
+                      <div class="row">
+                        <span class="article-excerpt"
+                          >本文整合了AutoDesk全系列软件安装过程中遇到的大部分问题，文末提供AutoDesk全系列软件安装包下载哦~~</span
+                        >
+                      </div>
+                      <div class="row post-footer">
+                        <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                        更新于：2019-05-23
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-3 col-xs-3 col-sm-3 col-lg-3"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      <a
+                        title="点击阅读全文"
+                        href="/pages/soteware/autocad"
+                        class="thumbnail"
+                      >
+                        <img
+                          src="/media/images/index_more.jpg"
+                          alt="点击阅读全文"
+                          class="right-img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <br />
+            <div class="prev-next">
+              <div class="prev-next">
+                <p class="current">
+                  1 / 5
+                </p>
+
+                <a class="next" rel="next" href="#">
+                  <section class="post next">
+                    &nbsp;下一页&nbsp;<i
+                      class="fas fa-chevron-right"
+                      aria-hidden="true"
+                    ></i>
+                  </section>
+                </a>
+              </div>
+            </div>
+
+            <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3 right-side-container">
+          <!-- 侧边栏-->
+          <aside class="l_side">
+            <section class="list">
+              <header class="pure">
+                <div>
+                  <i class="fas fa-medal fa-fw" aria-hidden="true"></i
+                  >&nbsp;&nbsp;精选赛事
+                </div>
+
+                <a
+                  class="rightBtn"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                  href="/pages/event.html"
+                  title="点我查看"
+                >
+                  <i class="fas fa-arrow-right fa-fw"></i
+                ></a>
+              </header>
+
+              <div class="content pure">
+                <ul class="entry">
+                  <li>
+                    <a class="flat-box" title="点我" href="/pages/event.html">
+                      <div class="name">
+                        <i class="fas fa-cube fa-fw" aria-hidden="true"></i>
+
+                        &nbsp;&nbsp;结构设计大赛
+                      </div>
+
+                      <div>三星赛事~</div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="flat-box" title href="/pages/event.html">
+                      <div class="name">
+                        <i class=" fa-fw" aria-hidden="true"></i>
+
+                        &nbsp;&nbsp;趣味结赛
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="selected-tag-banner" style="height: 220px">
+              <header class="pure" style="padding: 0">
+                <div>
+                  <i class="fas fa-medal fa-fw" aria-hidden="true"></i
+                  >&nbsp;&nbsp;精选文章
+                </div>
+              </header>
+              <div class="pc-banner" style="padding-top: 10px !important;">
+                <div id="selected-tag-section">
+                  <div class="swiper-container" id="selected-tag">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide swiper-slide-center none-effect">
+                        <a href="#"
+                          ><img src="/media/images/index_more.jpg"
+                        /></a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a target="_blank" href="#"
+                          ><img src="/media/images/index_more.jpg"
+                        /></a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a target="_blank" href
+                          ><img src="/media/images/index_more.jpg"
+                        /></a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a target="_blank" href="#"
+                          ><img src="/media/images/index_more.jpg"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="plain">
+              <header class="pure">
+                <div>
+                  <i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i
+                  >&nbsp;&nbsp;注意啦～
+                </div>
+
+                <a
+                  class="rightBtn"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                  href="/about/"
+                  title="关于我们"
+                >
+                  <i class="fas fa-question-circle fa-fw"></i
+                ></a>
+              </header>
+
+              <div class="content pure">
+                <p>
+                  <br />
+                  <a href>&nbsp;&nbsp;&nbsp;&nbsp;科协招新啦~</a>
+                </p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+      <script>
+        setLoadingBarProgress(60);
+      </script>
+      <a class="s-top fas fa-arrow-up fa-fw" href="javascript:void(0)"></a>
+    </div>
+
+    <footer
+      id="footer"
+      class="clearfix"
+      style="padding-top: 10px; height: 150px"
+    >
+      <p><a href="/">土木系、建管系科协</a>专注于科研，赛事方面的服务</p>
+
+      <div class="social-wrapper">
+        <a
+          href="mailto:cecmsast@163.com"
+          class="social fas fa-envelope flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+
+        <!--<a
+          href="#"
+          class="social fab fa-github flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>-->
+
+        <a
+          href="/pages/team.html"
+          class="social fa fa-user flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+
+        <a
+          href="/pages/software.html"
+          class="social fa fa-folder flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+      </div>
+
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <!--CNZZ统计-->
+      <div>
+        <script type="text/javascript">
+          var cnzz_protocol =
+            "https:" == document.location.protocol ? "https://" : "http://";
+          document.write(
+            unescape(
+              "%3Cspan id='cnzz_stat_icon_1276848887'%3E%3C/span%3E%3Cscript src='" +
+                cnzz_protocol +
+                "s5.cnzz.com/z_stat.php%3Fid%3D1276848887%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"
+            )
+          );
+        </script>
+      </div>
+    </footer>
+    <script
+      async
+      src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+    ></script>
+
+    <script>
+      setLoadingBarProgress(80);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+    <script>
+      var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+      var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+      var ALGOLIA_API_KEY = "";
+      var ALGOLIA_APP_ID = "";
+      var ALGOLIA_INDEX_NAME = "";
+      var AZURE_SERVICE_NAME = "";
+      var AZURE_INDEX_NAME = "";
+      var AZURE_QUERY_KEY = "";
+      var BAIDU_API_ID = "";
+      var SEARCH_SERVICE = "hexo" || "hexo";
+      var ROOT = "/" || "/";
+      if (!ROOT.endsWith("/")) ROOT += "/";
+    </script>
+
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(function() {
+        const $reveal = $(".reveal");
+        if ($reveal.length === 0) return;
+        if (ScrollReveal) {
+          const sr = ScrollReveal({ distance: 0 });
+          sr.reveal(".reveal");
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        Waves.attach(".flat-btn", ["waves-button"]);
+        Waves.attach(".float-btn", ["waves-button", "waves-float"]);
+        Waves.attach(".float-btn-light", [
+          "waves-button",
+          "waves-float",
+          "waves-light"
+        ]);
+        Waves.attach(".flat-box", ["waves-block"]);
+        Waves.attach(".float-box", ["waves-block", "waves-float"]);
+        Waves.attach(".waves-image");
+        Waves.init();
+      });
+    </script>
+
+    <script
+      async
+      src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+    ></script>
+    <!--  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>-->
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1/js/volantis.min.js"></script>
+
+    <script>
+      var GUEST_INFO = ["nick", "mail", "link"];
+      var guest_info = "nick,mail".split(",").filter(function(item) {
+        return GUEST_INFO.indexOf(item) > -1;
+      });
+      var notify = "true" == true;
+      var verify = "false" == true;
+      var valine = new Valine();
+      valine.init({
+        el: "#valine_container",
+        notify: notify,
+        verify: verify,
+        guest_info: guest_info,
+
+        appId: "PIULXFOr3PcXpaApB1SSWs8m-gzGzoHsz",
+        appKey: "Y9pNDqPDD2UKMlbVSVUVJePX",
+        placeholder: "快来评论吧~",
+        pageSize: "10",
+        avatar: "mp",
+        lang: "zh-cn",
+        highlight: "true"
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/clipboard-use.js"></script>
+
+    <!--首页顶部banner-->
+    <script src="/js/banner/homepage-top-banner.js"></script>
+
+    <!--精选标签banner-->
+    <script src="/js/banner/selected-tag-banner.js"></script>
+
+    <!--开屏广告-->
+    <script src="/js/openscreen/openscreen.js"></script>
+
+    <!--滚动固定处理-->
+    <script src="/js/scroll/scroll-util.js"></script>
+
+    <!--动画效果-->
+    <script src="/js/animate/animation.js"></script>
+    <script>
+      setLoadingBarProgress(100);
+    </script>
+  </body>
+</html>
