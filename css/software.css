@@ -82,7 +82,8 @@ body {
 .leftcolumn {   
   float: left;
   width: 25%;
-	margin-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 100px;
 	background-color: #F1F1F1;
 }
  
@@ -92,7 +93,9 @@ body {
   width: 74%;
   background-color: #FFFFFF;
    padding-left: 20px;
+   padding-top: 20px;
    margin-top: 10px;
+   margin-bottom: 10px;
 	border-style: solid;
 	border-width:2px ;
 	border-color: #1D2153;
