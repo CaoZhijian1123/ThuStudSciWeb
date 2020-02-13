@@ -1,423 +1,1041 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!-author: Fengyou Cao 
+  <!--author: Fengyou Cao 
 date：2020-2-10 11:38
 version:1.0.1 -->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="../js/team_jquery.js"></script>
-<script type="text/javascript" src="../js/team_heightLine.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/team.css"/>
-<title>部门介绍</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../js/team_jquery.js"></script>
+    <script type="text/javascript" src="../js/team_heightLine.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/team.css" />
+    <link rel="stylesheet" href="../css/index_waves.min.css" />
+    <link rel="stylesheet" href="../css/index_all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/event_main.css" />
+    
+    <title>部门介绍</title>
 
-<body>
-<div id="container">
-  <div id="main" class="clearfix">
-    <div class="lBox heightLine-a">
-      <h2>科协部门</h2>
-      <ul class="sNavi">
-        <li class="on">技术服务部</li>
-        <li>科创中心</li>
-        <li>推广中心</li>
-        <li>赛事中心</li>
-        <li>组织规划部</li>
-        <li>往届成员</li>
-      </ul>
+    <script>
+      function setLoadingBarProgress(num) {
+        document.getElementById("loading-bar").style.width = num + "%";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--reference_index_start-->
+    <div class="l_body" style="opacity: 1">
+      <div id="loading-bar-wrapper">
+        <div id="loading-bar" class="pure"></div>
+      </div>
+      <script>
+        setLoadingBarProgress(20);
+      </script>
+      <header class="l_header pure">
+        <div class="wrapper">
+          <div class="nav-main container container--flex">
+            <a class="logo flat-box" href="/">
+              <img class="logo" src="/media/images/index_logo.png" />
+            </a>
+            <div class="menu">
+              <ul class="h-list">
+                <li>
+                  <a id="home" class="nav flat-box" href="/">
+                    <i class="fas fa-rss fa-fw"></i>&nbsp;综合
+                  </a>
+                </li>
+                <li>&nbsp;</li>
+                <div class="dropdown">
+                  <i class="fas fa-folder-open fa-fw"></i>
+                  <span>精彩赛事</span>
+                  <i class="fa fa-caret-down nav-more-i"></i>
+                  <div class="dropdown-content">
+                    <div class="detail-area">
+                      <!--当前是一级分类-->
+                      <h2 class="detail-title-wrapper">
+                        <a
+                          class="detail-title"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >结赛</a
+                        >
+                        <a
+                          class="detail-more"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >更多 ></a
+                        >
+                      </h2>
+                      <div class="detail-content">
+                        <!--查找每个一级分类下所有的二级分类-->
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/struct-design-competition"
+                          target="_blank"
+                          >结构设计大赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/fun-struct-design-competition"
+                          target="_blank"
+                          >趣味结赛</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="detail-area">
+                      <!--当前是一级分类-->
+                      <h2 class="detail-title-wrapper">
+                        <a
+                          class="detail-title"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >其他赛事</a
+                        >
+                        <a
+                          class="detail-more"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >更多 ></a
+                        >
+                      </h2>
+                      <div class="detail-content">
+                        <!--查找每个一级分类下所有的二级分类-->
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/traffic-competition"
+                          target="_blank"
+                          >交赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/future-competition"
+                          target="_blank"
+                          >未创</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/house-competition"
+                          target="_blank"
+                          >房赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/floor-competition"
+                          target="_blank"
+                          >地创</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li>&nbsp;</li>
+                <li>
+                  <a id="tags" class="nav flat-box" href="/pages/team.html">
+                    <i class="fas fa-user fa-fw"></i>&nbsp;团队介绍
+                  </a>
+                </li>
+
+                <li>
+                  <a id="tags" class="nav flat-box" href="/pages/software.html">
+                    <i class="fas fa-hashtag fa-fw"></i>&nbsp;常用软件
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    id="archives"
+                    class="nav flat-box"
+                    href="/pages/contact.html"
+                  >
+                    <i class="fas fa-archive fa-fw"></i>&nbsp;联系我们
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="m_search">
+              <form name="searchform" class="form u-search-form">
+                <input
+                  type="text"
+                  class="input u-search-input"
+                  placeholder="搜索"
+                />
+                <span class="icon"><i class="fas fa-search fa-fw"></i></span>
+              </form>
+            </div>
+
+            <ul class="switcher h-list">
+              <li class="s-search">
+                <a class="fas fa-search fa-fw" href="javascript:void(0)"></a>
+              </li>
+
+              <li class="s-menu">
+                <a class="fas fa-bars fa-fw" href="javascript:void(0)"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-sub container container--flex">
+            <a class="logo flat-box"></a>
+            <ul class="switcher h-list">
+              <li class="s-comment">
+                <a
+                  class="flat-btn fas fa-comments fa-fw"
+                  href="javascript:void(0)"
+                ></a>
+              </li>
+              <li class="s-toc">
+                <a
+                  class="flat-btn fas fa-list fa-fw"
+                  href="javascript:void(0)"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <aside class="menu-phone">
+        <header>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a id="home" class="nav flat-box" href="/">
+                  <i class="fas fa-rss fa-fw"></i>&nbsp;综合
+                </a>
+              </li>
+
+              <li>
+                <a
+                  id="categories"
+                  class="nav flat-box"
+                  href="/pages/event.html"
+                >
+                  <i class="fas fa-folder-open fa-fw"></i>&nbsp;精彩赛事
+                </a>
+              </li>
+
+              <li>
+                <a id="tags" class="nav flat-box" href="/pages/team.html">
+                  <i class="fas fa-user fa-fw"></i>&nbsp;团队介绍
+                </a>
+              </li>
+
+              <li>
+                <a id="tags" class="nav flat-box" href="/pages/software.html">
+                  <i class="fas fa-hashtag fa-fw"></i>&nbsp;常用软件
+                </a>
+              </li>
+
+              <li>
+                <a
+                  id="archives"
+                  class="nav flat-box"
+                  href="/pages/contact.html"
+                >
+                  <i class="fas fa-archive fa-fw"></i>&nbsp;联系我们
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </aside>
+
+      <script>
+        setLoadingBarProgress(40);
+      </script>
     </div>
-    <div class="rBox heightLine-a">
-      <div class="teamInfoBox">
-        <div class="tBox" style="display: block">
-          <h3><span>技术服务部</span>
-            <p>TECHNICAL SERVICE DEPARTMENT</p>
-          </h3>
-          <div class="depBox">
-            <h4><span>部门职能</span>
-              <p>DEPARTMENTAL FUNCTIONS</p>
-            </h4>
-            <p>技术部是科协的技术支撑，负责撰写技术贴，举办软件讲座，techTime答疑；<br>
-              承办地下空间创新大赛，结赛直播；土木系学习资料的整理与发布；<br>
-              系科协网站，小程序的开发、部署与运维。</p>
-          </div>
-          <h4><span>成员介绍</span>
-            <p>INTROTUCTION OF MEMBERS</p>
-          </h4>
-          <div class="bigBox">
-            <div class="imgBox clearfix"><!--mod1-->
-              <div class="phoBox"> <img src="../media/images/team_caozj.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-1">
-                <p class="name">曹志坚</p>
-                <p class="from">From: 交通7</p>
-                <p class="content">喜欢宅、java,欢迎各位喜欢技术的学妹学弟加入技术部！</p>
-              </div>
-            </div>
-            <!--mod1-->
-            
-            <div class="imgBox clearfix"><!--mod2-->
-              <div class="phoBox"> <img src="../media/images/team_guyi.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-1">
-                <p class="name">顾燚</p>
-                <p class="from">From: 土木85</p>
-                <p class="content">喜欢看番和计算机相关知识。欢迎喜欢计算机的小迷弟来找我切磋~
-                  技术服务部，科协核心部门，你值得拥有。</p>
-              </div>
-            </div>
-            <!--mod2-->
-            
-            <div class="imgBox clearfix"><!--mod3-->
-              <div class="phoBox"> <img src="../media/images/team_caofy.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-2">
-                <p class="name">曹凤友</p>
-                <p class="from">From: 土木82</p>
-                <p class="content">技术部一名普普通通的成员，一直被大佬带飞，希望慢慢学习，慢慢进步。</p>
-              </div>
-            </div>
-            <!--mod3-->
-            
-            <div class="imgBox clearfix"><!--mod4-->
-              <div class="phoBox"> <img src="../media/images/team_hek.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-2">
-                <p class="name">何柯</p>
-                <p class="from">From: 土木83</p>
-                <p class="content">爱好steam和二次元，希望能认识更多的学弟学妹呀！</p>
-              </div>
-            </div>
-            <!--mod4-->
-            
-            <div class="imgBox clearfix"><!--mod5-->
-              <div class="phoBox"> <img src="../media/images/team_mengj.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-3">
-                <p class="name">孟姣</p>
-                <p class="from">From: 土木82</p>
-                <p class="content">静若处子，动若脱兔。性格有点慢热，但熟起来之后会有点神经质。喜欢聊天、散步、K歌、出去浪。 </p>
-              </div>
-            </div>
-            <!--mod5--> 
-            
-          </div>
-          <!--bigBox--> 
-          
+    <div id="container">
+      <div id="main" class="clearfix">
+        <div class="lBox heightLine-a">
+          <h2>科协部门</h2>
+          <ul class="sNavi">
+            <li class="on">技术服务部</li>
+            <li>科创中心</li>
+            <li>推广中心</li>
+            <li>赛事中心</li>
+            <li>组织规划部</li>
+            <li>往届成员</li>
+          </ul>
         </div>
-        <!--技术服务部-->
-        
-        <div class="tBox" style="display: none;">
-          <h3><span>科创中心</span>
-            <p>SCIENCE AND TECHNOLOGY INNOVATION CENTER</p>
-          </h3>
-          <div class="depBox">
-            <h4><span>部门职能</span>
-              <p>DEPARTMENTAL FUNCTIONS</p>
-            </h4>
-            <p>科创中心部门主要任务为提高系内科研氛围，带动本科生积极进行科研尝试，帮助有志于科创的同学明确科研方向。<br>
-              同时科创中心兼负责两大赛事：趣味结赛、未创，对两大赛事进行全生命周期的管理，从筹划命题到答辩颁奖，提升同学们的组织能力与创新能力。<br>
-              在科创中心，我们集思广益，寻找具有价值的科创方向；我们对接教师，得到最有价值的科研指导；我们筹备比赛，锻炼组织能力与沟通能力。<br>
-              科创中心的生活更能使我们结识志同道合的伙伴，获得珍贵的友情，在未来的学习道路上拥有左膀右臂。<br>
-              科创中心，找寻科创在生活中的意义，收获友情，点亮自己。欢迎大家加入科协，加入科创中心。 </p>
+        <div class="rBox heightLine-a">
+          <div class="teamInfoBox">
+            <div class="tBox" style="display: block">
+              <h3>
+                <span>技术服务部</span>
+                <p>TECHNICAL SERVICE DEPARTMENT</p>
+              </h3>
+              <div class="depBox">
+                <h4>
+                  <span>部门职能</span>
+                  <p>DEPARTMENTAL FUNCTIONS</p>
+                </h4>
+                <p>
+                  技术部是科协的技术支撑，负责撰写技术贴，举办软件讲座，techTime答疑；<br />
+                  承办地下空间创新大赛，结赛直播；土木系学习资料的整理与发布；<br />
+                  系科协网站，小程序的开发、部署与运维。
+                </p>
+              </div>
+              <h4>
+                <span>成员介绍</span>
+                <p>INTROTUCTION OF MEMBERS</p>
+              </h4>
+              <div class="bigBox">
+                <div class="imgBox clearfix">
+                  <!--mod1-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_caozj.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-1">
+                    <p class="name">曹志坚</p>
+                    <p class="from">From: 交通7</p>
+                    <p class="content">
+                      喜欢宅、java,欢迎各位喜欢技术的学妹学弟加入技术部！
+                    </p>
+                  </div>
+                </div>
+                <!--mod1-->
+
+                <div class="imgBox clearfix">
+                  <!--mod2-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_guyi.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-1">
+                    <p class="name">顾燚</p>
+                    <p class="from">From: 土木85</p>
+                    <p class="content">
+                      喜欢看番和计算机相关知识。欢迎喜欢计算机的小迷弟来找我切磋~
+                      技术服务部，科协核心部门，你值得拥有。
+                    </p>
+                  </div>
+                </div>
+                <!--mod2-->
+
+                <div class="imgBox clearfix">
+                  <!--mod3-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_caofy.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-2">
+                    <p class="name">曹凤友</p>
+                    <p class="from">From: 土木82</p>
+                    <p class="content">
+                      技术部一名普普通通的成员，一直被大佬带飞，希望慢慢学习，慢慢进步。
+                    </p>
+                  </div>
+                </div>
+                <!--mod3-->
+
+                <div class="imgBox clearfix">
+                  <!--mod4-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_hek.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-2">
+                    <p class="name">何柯</p>
+                    <p class="from">From: 土木83</p>
+                    <p class="content">
+                      爱好steam和二次元，希望能认识更多的学弟学妹呀！
+                    </p>
+                  </div>
+                </div>
+                <!--mod4-->
+
+                <div class="imgBox clearfix">
+                  <!--mod5-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_mengj.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-3">
+                    <p class="name">孟姣</p>
+                    <p class="from">From: 土木82</p>
+                    <p class="content">
+                      静若处子，动若脱兔。性格有点慢热，但熟起来之后会有点神经质。喜欢聊天、散步、K歌、出去浪。
+                    </p>
+                  </div>
+                </div>
+                <!--mod5-->
+              </div>
+              <!--bigBox-->
+            </div>
+            <!--技术服务部-->
+
+            <div class="tBox" style="display: none;">
+              <h3>
+                <span>科创中心</span>
+                <p>SCIENCE AND TECHNOLOGY INNOVATION CENTER</p>
+              </h3>
+              <div class="depBox">
+                <h4>
+                  <span>部门职能</span>
+                  <p>DEPARTMENTAL FUNCTIONS</p>
+                </h4>
+                <p>
+                  科创中心部门主要任务为提高系内科研氛围，带动本科生积极进行科研尝试，帮助有志于科创的同学明确科研方向。<br />
+                  同时科创中心兼负责两大赛事：趣味结赛、未创，对两大赛事进行全生命周期的管理，从筹划命题到答辩颁奖，提升同学们的组织能力与创新能力。<br />
+                  在科创中心，我们集思广益，寻找具有价值的科创方向；我们对接教师，得到最有价值的科研指导；我们筹备比赛，锻炼组织能力与沟通能力。<br />
+                  科创中心的生活更能使我们结识志同道合的伙伴，获得珍贵的友情，在未来的学习道路上拥有左膀右臂。<br />
+                  科创中心，找寻科创在生活中的意义，收获友情，点亮自己。欢迎大家加入科协，加入科创中心。
+                </p>
+              </div>
+              <h4>
+                <span>成员介绍</span>
+                <p>INTROTUCTION OF MEMBERS</p>
+              </h4>
+              <div class="bigBox clearfix">
+                <div class="imgBox clearfix">
+                  <!--mod1-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_quanrx.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-4">
+                    <p class="name">全镕希</p>
+                    <p class="from">From: 建管7</p>
+                    <p class="content">
+                      爱好篮球，唱歌，性格较外向，非常有耐心。希望大家能加入科创中心的大家庭，共同进步，共同找寻到心之所向。
+                    </p>
+                  </div>
+                </div>
+                <!--mod1-->
+
+                <div class="imgBox clearfix">
+                  <!--mod2-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_zhangxh.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-4">
+                    <p class="name">张新豪</p>
+                    <p class="from">From: 土木82</p>
+                    <p class="content">
+                      希望能和对科创感兴趣的小伙伴在科创中心一起探索，共同进步。
+                    </p>
+                  </div>
+                </div>
+                <!--mod2-->
+
+                <div class="imgBox clearfix">
+                  <!--mod3-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_chengzg.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-5">
+                    <p class="name">程志刚</p>
+                    <p class="from">From: 土木82</p>
+                    <p class="content">
+                      又土又木的土木星人一枚，喜欢运动，热爱探索。欢迎大家加入土木系科协科创中心，一起大开脑洞，共同进步。
+                    </p>
+                  </div>
+                </div>
+                <!--mod3-->
+
+                <div class="imgBox clearfix">
+                  <!--mod4-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_chent.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-5">
+                    <p class="name">陈同</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      平时喜欢打篮球，也懂一些书法。在科协一年了，欢迎大家加入科创中心这个集体.
+                    </p>
+                  </div>
+                </div>
+                <!--mod4-->
+
+                <div class="imgBox clearfix">
+                  <!--mod5-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_zhouh.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-6">
+                    <p class="name">周航</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      哈喽，我是周航，目前在土木建管系科协科创中心工作，希望在科创中心遇见同样喜欢创新、乐于思考的你！
+                    </p>
+                  </div>
+                </div>
+                <!--mod5-->
+              </div>
+              <!--bigBox-->
+            </div>
+            <!--科创中心-->
+            <div class="tBox" style="display: none;">
+              <h3>
+                <span>推广中心</span>
+                <p>PROMOTION CENTER</p>
+              </h3>
+              <div class="depBox">
+                <h4>
+                  <span>部门职能</span>
+                  <p>DEPARTMENTAL FUNCTIONS</p>
+                </h4>
+                <p>
+                  推广中心是学生科协下设的宣传部门，致力于科协各种活动、赛事的宣传推广，打造科协最具影响力的宣传服务平台。<br />
+                  最具创造的平台，挥洒才情的空间。<br />
+                  艺术与技术共舞，创意与实干齐飞。<br />
+                  熟练自如的宣传技术，精彩纷呈的宣传作品，这里将带给你最大的成就感！最靠谱的队友，志同道合的伙伴，这里将给你最独特的社工体验！<br />
+                  海报、推送、折页，无数次头脑风暴，无数次灵感爆发，只为创意的皇冠上最耀眼的那颗明珠。<br />
+                  加入推广中心，为社工抹上一缕绚烂的色彩！<br />
+                </p>
+              </div>
+              <h4>
+                <span>成员介绍</span>
+                <p>INTROTUCTION OF MEMBERS</p>
+              </h4>
+              <div class="bigBox">
+                <div class="imgBox clearfix">
+                  <!--mod1-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_chenjh.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-7">
+                    <p class="name">陈佳荷</p>
+                    <p class="from">From: 管7</p>
+                    <p class="content">
+                      虽然岁数大但也是科协萌新，喜欢尝试新奇的东西，最重要是跟大家一起学习！
+                    </p>
+                  </div>
+                </div>
+                <!--mod1-->
+
+                <!--mod2-->
+
+                <div class="imgBox clearfix">
+                  <!--mod3-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_huanghd.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-7">
+                    <p class="name">黄浩东</p>
+                    <p class="from">From: 土木83</p>
+                    <p class="content">
+                      我目前已经在推广中心做了一年啦，略有经验，欢迎学弟学妹们报名加入推广中心
+                    </p>
+                  </div>
+                </div>
+                <!--mod3-->
+
+                <div class="imgBox clearfix" style="height: 265px !important;">
+                  <!--mod4-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_liyx.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-8">
+                    <p class="name">李奕萱</p>
+                    <p class="from">From: 土木85</p>
+                    <p class="content">
+                      Hello大家好，推广看起来是一个宣传部门，却在培养动手能力的歪路上越走越远，欢迎学弟学妹们来跟我们一起搭结构造海报，快乐做手工~
+                    </p>
+                  </div>
+                </div>
+                <!--mod4-->
+
+                <div class="imgBox clearfix">
+                  <!--mod2-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_qianxy.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-8">
+                    <p class="name">钱欣宇</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      推广中心负责各种赛事的宣传，包括海报，相关推送的制作，赛事周边的设计和一些趣味赛事的奖品设计。此外还有采访任务，和一些活动的场工。
+                      在这里你将会体验手工作业，采访大佬，推文赶稿，软文写作，海报重做，周边方案被拍掉，三轮车半路没电推车。
+                      才子们各得其乐，聚在一起相得益彰。来吧我有创意的朋友，来跟我们一起创世吧！
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--bigBox-->
+            </div>
+            <!--推广中心-->
+
+            <div class="tBox" style="display: none;">
+              <h3>
+                <span>赛事中心</span>
+                <p>Match Center</p>
+              </h3>
+              <div class="depBox">
+                <h4>
+                  <span>部门职能</span>
+                  <p>DEPARTMENTAL FUNCTIONS</p>
+                </h4>
+                <p>
+                  赛事中心负责土木系各项赛事的举办与科协的海外实践活动。<br />
+                  从头脑风暴命制赛题、一丝不苟制定规则、到克勤克俭购售材料、尽心尽力组织竞赛，再到共享胜利的晚宴，这里能满足你对比赛的所有想象。灯火通明的比赛现场是选手的赛场，也是我们的主场。结赛，交赛的背后是我们的付出。北京交赛、全国交赛、全国结赛清华代表队的背后是我们的支持。<br />
+                  从“莲桥”到“心·海·城”，清华大学结构设计大赛至今共举办25届。交通科技竞赛也已走过13个春秋。比赛形式创新、命题范围扩展，荷载类型多样化，结赛，交赛的发展是历届科协前辈的心血，也是我们的坚守。全国大学生结构设计大赛源于清华结赛，从高层建筑结构到山地输电塔，历届清华代表队在13年里角逐全国赛场，续写着属于清华人的辉煌。<br />
+                  庚子鼠年，属于我们的惊喜。科协将面向全体科协内部人员打造专属科协的海外实践项目，依托科协的外联资源，助力每位科协人er的实践梦。首期科协海外实践，将在学期中对科协成员意愿进行统计，并组建相应支队前往海外进行实践，可参考的往期海外实践地点包括东南亚、日本、英国和加拿大。整个实践活动将由赛事中心统筹安排。<br />
+                  无论是在台前、亦或在幕后，赛事中心，我和你。<br />
+                  我们期待你的加入。<br />
+                </p>
+              </div>
+              <h4>
+                <span>成员介绍</span>
+                <p>INTROTUCTION OF MEMBERS</p>
+              </h4>
+              <div class="bigBox">
+                <div class="imgBox clearfix">
+                  <!--mod1-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_zhousy.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-9">
+                    <p class="name">周思源</p>
+                    <p class="from">From: 结72</p>
+                    <p class="content">
+                      平时喜欢看看电视。我在赛事两年的感受是严谨与温暖。办比赛需要公平公正、事无巨细。但迎新、聚餐、平时部会那肯定是另一番画面呀！想想不如来赛事吧！
+                    </p>
+                  </div>
+                </div>
+                <!--mod1-->
+
+                <div class="imgBox clearfix">
+                  <!--mod2-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_chaixx.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-9">
+                    <p class="name">柴晓萱</p>
+                    <p class="from">From: 建管7</p>
+                    <p class="content">
+                      我虽然是七字班老学姐了，但也是第一次加入科协，在未来主要会负责科协内部的实践活动。<br />
+                      非常期待大家能加入科协赛事。
+                    </p>
+                  </div>
+                </div>
+                <!--mod2-->
+
+                <div class="imgBox clearfix">
+                  <!--mod3-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_yangky.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-10">
+                    <p class="name">杨可扬</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      大家好，我叫杨可扬。emmm……长话短说吧，欢迎来科协赛事部。
+                    </p>
+                  </div>
+                </div>
+                <!--mod3-->
+
+                <div class="imgBox clearfix">
+                  <!--mod4-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_lihc.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-10">
+                    <p class="name">李昊澄</p>
+                    <p class="from">From: 建环81</p>
+                    <p class="content">
+                      可能比萌新更萌的萌旧学长一只，喜欢看书、游戏、卖萌，喵~
+                      来自哏都天津，虽然不会说相声，但一定能让大家开心。
+                    </p>
+                  </div>
+                </div>
+                <!--mod4-->
+
+                <div class="imgBox clearfix">
+                  <!--mod5-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_liuch.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-11">
+                    <p class="name">刘辰昊</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      平常喜欢看看书、追追番、踢踢球，偶尔也会下下棋打打牌，欢迎大家加入科协一起来玩！
+                    </p>
+                  </div>
+                </div>
+                <!--mod5-->
+
+                <!--mod6-->
+
+                <div class="imgBox clearfix">
+                  <!--mod7-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_sunyl.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-11">
+                    <p class="name">孙宜林</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      去年有幸加入科协赛事部，今年继续赖在这里了，在赛事部一边举办比赛一边参加比赛的感觉真的很棒，也欢迎大家一起来这边来VIP啊！
+                    </p>
+                  </div>
+                </div>
+                <!--mod7-->
+                <div class="imgBox clearfix">
+                  <!--mod6-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_fenghl.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-12">
+                    <p class="name">冯昊龙</p>
+                    <p class="from">From: 土木85</p>
+                    <p class="content">
+                      参加过两次结赛和一次趣味结赛，去年一年都在科协赛事中心参与各类赛事的筹备工作。各种科创赛事是可供大家自由发挥创造力、想象力的平台，规划筹备这些科创比赛，在获得宝贵的社工经历的同时，也能收获满满的成就感。欢迎学弟学妹们加入赛事中心和我们一起玩耍！
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--bigBox-->
+            </div>
+            <!--赛事中心-->
+
+            <div class="tBox" style="display: none;">
+              <h3>
+                <span>组织规划部</span>
+                <p>ORGANIZATION PLANNING DEPARTMENT</p>
+              </h3>
+              <div class="depBox">
+                <h4>
+                  <span>部门职能</span>
+                  <p>DEPARTMENTAL FUNCTIONS</p>
+                </h4>
+                <p>
+                  组织规划部对外负责活动组织、流程策划，对内促进感情建设、活跃氛围，同时也管理科协内部财务情况，致力于打造有深度、有宽度、有温度的组织交流平台。<br />
+                  结构设计大赛、推研交流沙龙、大类分流交流会，每一场活动的成功举办，都有我们在幕后的精细策划与辛勤身影。科协内部生日祝福、男女生节礼物，每一份温暖的传递，都是我们用心的追求。<br />
+                  在这里，你可以参与活动规划，锻炼组织能力；思索团队建设，引领活跃气氛;管理财务状况，做细心“小管家”。最重要的是，你将认识一群志同道合的伙伴，温暖与共、并肩同行！<br />
+                  科协发展的每一个脚印，社工成长的每一个瞬间，都有我们的努力与期待！加入组规，一起助力科协的精彩未来！<br />
+                </p>
+              </div>
+              <h4>
+                <span>成员介绍</span>
+                <p>INTROTUCTION OF MEMBERS</p>
+              </h4>
+              <div class="bigBox">
+                <div class="imgBox clearfix" style="height: 220px !important;">
+                  <!--mod1-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_zhangty.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-13">
+                    <p class="name">张天野</p>
+                    <p class="from">From: 结73</p>
+                    <p class="content">
+                      论爱好，喜欢看海贼王、听歌唱歌、打羽毛球；论性格，非常外向、十分热情、偶尔逗比、有时沙雕。非常期待大家能加入科协组规，在接下来的一年爱社工、爱学习、爱生活，点亮技能、收获友谊、邂逅感动。
+                    </p>
+                  </div>
+                </div>
+                <!--mod1-->
+
+                <div class="imgBox clearfix" style="height: 220px !important;">
+                  <!--mod2-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_chenzx.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-13">
+                    <p class="name">陈子潇</p>
+                    <p class="from">From: 土木84</p>
+                    <p class="content">
+                      组规好
+                      组规妙。大家好，我在组规目前混了一年了，期待大家的加入✪ω✪（组规可能是最为轻松的社工）
+                    </p>
+                  </div>
+                </div>
+                <!--mod2-->
+
+                <div class="imgBox clearfix">
+                  <!--mod3-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_anp.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-14">
+                    <p class="name">安芃</p>
+                    <p class="from">From: 土木85</p>
+                    <p class="content">抱朴守拙，讷言慎行。</p>
+                  </div>
+                </div>
+                <!--mod3-->
+
+                <div class="imgBox clearfix">
+                  <!--mod4-->
+                  <div class="phoBox">
+                    <img
+                      src="../media/images/team_weirz.jpg"
+                      width="120"
+                      height="158"
+                    />
+                  </div>
+                  <div class="texBox heightLine-14">
+                    <p class="name">魏润哲</p>
+                    <p class="from">From: 土木82</p>
+                    <p class="content">
+                      白天想，夜里哭，做梦都想去首都。希望新的一年和大家一起奥利给！
+                    </p>
+                  </div>
+                </div>
+                <!--mod4-->
+              </div>
+              <!--bigBox-->
+            </div>
+            <!--组织规划部-->
+            <div class="tBox" style="display: none;">
+              <h3>
+                <span>往届成员 </span>
+                <p>PREVIOUS MEMBERS</p>
+              </h3>
+              Remain to be done...
+            </div>
           </div>
-          <h4><span>成员介绍</span>
-            <p>INTROTUCTION OF MEMBERS</p>
-          </h4>
-          <div class="bigBox clearfix">
-            <div class="imgBox clearfix"><!--mod1-->
-              <div class="phoBox"><img src="../media/images/team_quanrx.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-4">
-                <p class="name">全镕希</p>
-                <p class="from">From: 建管7</p>
-                <p class="content">爱好篮球，唱歌，性格较外向，非常有耐心。希望大家能加入科创中心的大家庭，共同进步，共同找寻到心之所向。</p>
-              </div>
-            </div>
-            <!--mod1-->
-            
-            <div class="imgBox clearfix"><!--mod2-->
-              <div class="phoBox"> <img src="../media/images/team_zhangxh.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-4">
-                <p class="name">张新豪</p>
-                <p class="from">From: 土木82</p>
-                <p class="content">希望能和对科创感兴趣的小伙伴在科创中心一起探索，共同进步。</p>
-              </div>
-            </div>
-            <!--mod2-->
-            
-            <div class="imgBox clearfix"><!--mod3-->
-              <div class="phoBox"><img src="../media/images/team_chengzg.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-5">
-                <p class="name">程志刚</p>
-                <p class="from">From: 土木82</p>
-                <p class="content">又土又木的土木星人一枚，喜欢运动，热爱探索。欢迎大家加入土木系科协科创中心，一起大开脑洞，共同进步。</p>
-              </div>
-            </div>
-            <!--mod3-->
-            
-            <div class="imgBox clearfix"><!--mod4-->
-              <div class="phoBox"> <img src="../media/images/team_chent.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-5">
-                <p class="name">陈同</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">平时喜欢打篮球，也懂一些书法。在科协一年了，欢迎大家加入科创中心这个集体.</p>
-              </div>
-            </div>
-            <!--mod4-->
-            
-            <div class="imgBox clearfix"><!--mod5-->
-              <div class="phoBox"> <img src="../media/images/team_zhouh.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-6">
-                <p class="name">周航</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">哈喽，我是周航，目前在土木建管系科协科创中心工作，希望在科创中心遇见同样喜欢创新、乐于思考的你！ </p>
-              </div>
-            </div>
-            <!--mod5--> 
-            
-          </div>
-          <!--bigBox--> 
-          
         </div>
-        <!--科创中心-->
-        <div class="tBox" style="display: none;">
-          <h3><span>推广中心</span>
-            <p>PROMOTION CENTER</p>
-          </h3>
-          <div class="depBox">
-            <h4><span>部门职能</span>
-              <p>DEPARTMENTAL FUNCTIONS</p>
-            </h4>
-            <p>推广中心是学生科协下设的宣传部门，致力于科协各种活动、赛事的宣传推广，打造科协最具影响力的宣传服务平台。<br>
-              最具创造的平台，挥洒才情的空间。<br>
-              艺术与技术共舞，创意与实干齐飞。<br>
-              熟练自如的宣传技术，精彩纷呈的宣传作品，这里将带给你最大的成就感！最靠谱的队友，志同道合的伙伴，这里将给你最独特的社工体验！<br>
-              海报、推送、折页，无数次头脑风暴，无数次灵感爆发，只为创意的皇冠上最耀眼的那颗明珠。<br>
-              加入推广中心，为社工抹上一缕绚烂的色彩！<br>
-            </p>
-          </div>
-          <h4><span>成员介绍</span>
-            <p>INTROTUCTION OF MEMBERS</p>
-          </h4>
-          <div class="bigBox">
-            <div class="imgBox clearfix"><!--mod1-->
-              <div class="phoBox"><img src="../media/images/team_chenjh.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-7">
-                <p class="name">陈佳荷</p>
-                <p class="from">From: 管7</p>
-                <p class="content">虽然岁数大但也是科协萌新，喜欢尝试新奇的东西，最重要是跟大家一起学习！</p>
-              </div>
-            </div>
-            <!--mod1--> 
-            
-            <!--mod2-->
-            
-            <div class="imgBox clearfix"><!--mod3-->
-              <div class="phoBox"> <img src="../media/images/team_huanghd.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-7">
-                <p class="name">黄浩东</p>
-                <p class="from">From: 土木83</p>
-                <p class="content">我目前已经在推广中心做了一年啦，略有经验，欢迎学弟学妹们报名加入推广中心</p>
-              </div>
-            </div>
-            <!--mod3-->
-            
-            <div class="imgBox clearfix" style="height: 265px !important;"><!--mod4-->
-              <div class="phoBox"> <img src="../media/images/team_liyx.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-8">
-                <p class="name">李奕萱</p>
-                <p class="from">From: 土木85</p>
-                <p class="content">Hello大家好，推广看起来是一个宣传部门，却在培养动手能力的歪路上越走越远，欢迎学弟学妹们来跟我们一起搭结构造海报，快乐做手工~</p>
-              </div>
-            </div>
-            <!--mod4-->
-            
-            <div class="imgBox clearfix"><!--mod2-->
-              <div class="phoBox"> <img src="../media/images/team_qianxy.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-8">
-                <p class="name">钱欣宇</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">推广中心负责各种赛事的宣传，包括海报，相关推送的制作，赛事周边的设计和一些趣味赛事的奖品设计。此外还有采访任务，和一些活动的场工。
-                  在这里你将会体验手工作业，采访大佬，推文赶稿，软文写作，海报重做，周边方案被拍掉，三轮车半路没电推车。
-                  才子们各得其乐，聚在一起相得益彰。来吧我有创意的朋友，来跟我们一起创世吧！ </p>
-              </div>
-            </div>
-          </div>
-          <!--bigBox--> 
-          
-        </div>
-        <!--推广中心-->
-        
-        <div class="tBox" style="display: none;">
-          <h3><span>赛事中心</span>
-            <p>Match Center</p>
-          </h3>
-          <div class="depBox">
-            <h4><span>部门职能</span>
-              <p>DEPARTMENTAL FUNCTIONS</p>
-            </h4>
-            <p>赛事中心负责土木系各项赛事的举办与科协的海外实践活动。<br>
-              从头脑风暴命制赛题、一丝不苟制定规则、到克勤克俭购售材料、尽心尽力组织竞赛，再到共享胜利的晚宴，这里能满足你对比赛的所有想象。灯火通明的比赛现场是选手的赛场，也是我们的主场。结赛，交赛的背后是我们的付出。北京交赛、全国交赛、全国结赛清华代表队的背后是我们的支持。<br>
-              从“莲桥”到“心·海·城”，清华大学结构设计大赛至今共举办25届。交通科技竞赛也已走过13个春秋。比赛形式创新、命题范围扩展，荷载类型多样化，结赛，交赛的发展是历届科协前辈的心血，也是我们的坚守。全国大学生结构设计大赛源于清华结赛，从高层建筑结构到山地输电塔，历届清华代表队在13年里角逐全国赛场，续写着属于清华人的辉煌。<br>
-              庚子鼠年，属于我们的惊喜。科协将面向全体科协内部人员打造专属科协的海外实践项目，依托科协的外联资源，助力每位科协人er的实践梦。首期科协海外实践，将在学期中对科协成员意愿进行统计，并组建相应支队前往海外进行实践，可参考的往期海外实践地点包括东南亚、日本、英国和加拿大。整个实践活动将由赛事中心统筹安排。<br>
-              无论是在台前、亦或在幕后，赛事中心，我和你。<br>
-              我们期待你的加入。<br>
-            </p>
-          </div>
-          <h4><span>成员介绍</span>
-            <p>INTROTUCTION OF MEMBERS</p>
-          </h4>
-          <div class="bigBox">
-            <div class="imgBox clearfix"><!--mod1-->
-              <div class="phoBox"> <img src="../media/images/team_zhousy.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-9">
-                <p class="name">周思源</p>
-                <p class="from">From: 结72 </p>
-                <p class="content">平时喜欢看看电视。我在赛事两年的感受是严谨与温暖。办比赛需要公平公正、事无巨细。但迎新、聚餐、平时部会那肯定是另一番画面呀！想想不如来赛事吧！</p>
-              </div>
-            </div>
-            <!--mod1-->
-            
-            <div class="imgBox clearfix"><!--mod2-->
-              <div class="phoBox"> <img src="../media/images/team_chaixx.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-9">
-                <p class="name">柴晓萱</p>
-                <p class="from">From: 建管7</p>
-                <p class="content">我虽然是七字班老学姐了，但也是第一次加入科协，在未来主要会负责科协内部的实践活动。<br />
-                  非常期待大家能加入科协赛事。</p>
-              </div>
-            </div>
-            <!--mod2-->
-            
-            <div class="imgBox clearfix"><!--mod3-->
-              <div class="phoBox">  <img src="../media/images/team_yangky.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-10">
-                <p class="name">杨可扬</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">大家好，我叫杨可扬。emmm……长话短说吧，欢迎来科协赛事部。</p>
-              </div>
-            </div>
-            <!--mod3-->
-            
-            <div class="imgBox clearfix"><!--mod4-->
-              <div class="phoBox"> <img src="../media/images/team_lihc.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-10">
-                <p class="name">李昊澄</p>
-                <p class="from">From: 建环81</p>
-                <p class="content">可能比萌新更萌的萌旧学长一只，喜欢看书、游戏、卖萌，喵~ 来自哏都天津，虽然不会说相声，但一定能让大家开心。</p>
-              </div>
-            </div>
-            <!--mod4-->
-            
-            <div class="imgBox clearfix"><!--mod5-->
-              <div class="phoBox"> <img src="../media/images/team_liuch.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-11">
-                <p class="name">刘辰昊</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">平常喜欢看看书、追追番、踢踢球，偶尔也会下下棋打打牌，欢迎大家加入科协一起来玩！ </p>
-              </div>
-            </div>
-            <!--mod5--> 
-            
-            <!--mod6-->
-            
-            <div class="imgBox clearfix"><!--mod7-->
-              <div class="phoBox"><img src="../media/images/team_sunyl.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-11">
-                <p class="name">孙宜林</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">去年有幸加入科协赛事部，今年继续赖在这里了，在赛事部一边举办比赛一边参加比赛的感觉真的很棒，也欢迎大家一起来这边来VIP啊！ </p>
-              </div>
-            </div>
-            <!--mod7-->
-            <div class="imgBox clearfix"><!--mod6-->
-              <div class="phoBox"> <img src="../media/images/team_fenghl.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-12">
-                <p class="name">冯昊龙</p>
-                <p class="from">From: 土木85</p>
-                <p class="content">参加过两次结赛和一次趣味结赛，去年一年都在科协赛事中心参与各类赛事的筹备工作。各种科创赛事是可供大家自由发挥创造力、想象力的平台，规划筹备这些科创比赛，在获得宝贵的社工经历的同时，也能收获满满的成就感。欢迎学弟学妹们加入赛事中心和我们一起玩耍！</p>
-              </div>
-            </div>
-          </div>
-          <!--bigBox--> 
-          
-        </div>
-        <!--赛事中心-->
-        
-        <div class="tBox" style="display: none;">
-          <h3><span>组织规划部</span>
-            <p>ORGANIZATION PLANNING DEPARTMENT</p>
-          </h3>
-          <div class="depBox">
-            <h4><span>部门职能</span>
-              <p>DEPARTMENTAL FUNCTIONS</p>
-            </h4>
-            <p>组织规划部对外负责活动组织、流程策划，对内促进感情建设、活跃氛围，同时也管理科协内部财务情况，致力于打造有深度、有宽度、有温度的组织交流平台。<br>
-              结构设计大赛、推研交流沙龙、大类分流交流会，每一场活动的成功举办，都有我们在幕后的精细策划与辛勤身影。科协内部生日祝福、男女生节礼物，每一份温暖的传递，都是我们用心的追求。<br>
-              在这里，你可以参与活动规划，锻炼组织能力；思索团队建设，引领活跃气氛;管理财务状况，做细心“小管家”。最重要的是，你将认识一群志同道合的伙伴，温暖与共、并肩同行！<br>
-              科协发展的每一个脚印，社工成长的每一个瞬间，都有我们的努力与期待！加入组规，一起助力科协的精彩未来！<br>
-            </p>
-          </div>
-          <h4><span>成员介绍</span>
-            <p>INTROTUCTION OF MEMBERS</p>
-          </h4>
-          <div class="bigBox">
-            <div class="imgBox clearfix"  style="height: 220px !important;"><!--mod1-->
-              <div class="phoBox"><img src="../media/images/team_zhangty.jpg" width="120" height="158" />  </div>
-              <div class="texBox heightLine-13">
-                <p class="name">张天野</p>
-                <p class="from">From: 结73</p>
-                <p class="content">论爱好，喜欢看海贼王、听歌唱歌、打羽毛球；论性格，非常外向、十分热情、偶尔逗比、有时沙雕。非常期待大家能加入科协组规，在接下来的一年爱社工、爱学习、爱生活，点亮技能、收获友谊、邂逅感动。</p>
-              </div>
-            </div>
-            <!--mod1-->
-            
-            <div class="imgBox clearfix"  style="height: 220px !important;"><!--mod2-->
-              <div class="phoBox"> <img src="../media/images/team_chenzx.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-13">
-                <p class="name">陈子潇</p>
-                <p class="from">From: 土木84</p>
-                <p class="content">组规好 组规妙。大家好，我在组规目前混了一年了，期待大家的加入✪ω✪（组规可能是最为轻松的社工）</p>
-              </div>
-            </div>
-            <!--mod2-->
-            
-            <div class="imgBox clearfix"><!--mod3-->
-              <div class="phoBox"> <img src="../media/images/team_anp.jpg" width="120" height="158" /> </div>
-              <div class="texBox heightLine-14">
-                <p class="name">安芃</p>
-                <p class="from">From: 土木85</p>
-                <p class="content">抱朴守拙，讷言慎行。</p>
-              </div>
-            </div>
-            <!--mod3-->
-            
-            <div class="imgBox clearfix"><!--mod4-->
-              <div class="phoBox">  <img src="../media/images/team_weirz.jpg" width="120" height="158" /></div>
-              <div class="texBox heightLine-14">
-                <p class="name">魏润哲</p>
-                <p class="from">From: 土木82</p>
-                <p class="content">白天想，夜里哭，做梦都想去首都。希望新的一年和大家一起奥利给！</p>
-              </div>
-            </div>
-            <!--mod4--> 
-            
-          </div>
-          <!--bigBox--> 
-          
-        </div>
-        <!--组织规划部-->
-        <div class="tBox" style="display: none;">
-          <h3><span>往届成员 </span>
-            <p>PREVIOUS MEMBERS</p>
-          </h3>
-          Remain to be done... </div>
       </div>
     </div>
-  </div>
-</div>
-<script type="text/javascript" src="../js/team_jquery.js"></script>
-<script type="text/javascript" src="../js/team_heightLine.js"></script>
+    <p><br /></p>
+    <p><br /></p>
+    <p><br /></p>
+    <p><br /></p>
+    <footer
+      id="footer"
+      class="clearfix"
+      style="padding-top: 10px; height: 150px"
+    >
+      <p><a href="/">土木系、建管系科协</a>专注于科研，赛事方面的服务</p>
 
-<script>
-   $(".sNavi li").click(function(){
-  var nIndex=$(this).index();
-  $(this).addClass("on").siblings().removeClass("on");
-  $(".teamInfoBox .tBox").eq(nIndex).show().siblings().hide();
-});
-</script>
-</body>
+      <div class="social-wrapper">
+        <a
+          href="mailto:cecmsast@163.com"
+          class="social fas fa-envelope flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+
+        <!--<a
+href="#"
+class="social fab fa-github flat-btn"
+target="_blank"
+rel="external"
+></a>-->
+
+        <a
+          href="/pages/team.html"
+          class="social fa fa-user flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+
+        <a
+          href="/pages/software.html"
+          class="social fa fa-folder flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+      </div>
+
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <!--CNZZ统计-->
+      <div>
+        <script type="text/javascript">
+          var cnzz_protocol =
+            "https:" == document.location.protocol ? "https://" : "http://";
+          document.write(
+            unescape(
+              "%3Cspan id='cnzz_stat_icon_1276848887'%3E%3C/span%3E%3Cscript src='" +
+                cnzz_protocol +
+                "s5.cnzz.com/z_stat.php%3Fid%3D1276848887%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"
+            )
+          );
+        </script>
+      </div>
+    </footer>
+    <!--footer引入-->
+    <script>
+      setLoadingBarProgress(80);
+    </script>
+    <script src="/js/index_jquery.min.js"></script>
+
+    <script>
+      var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+      var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+      var ALGOLIA_API_KEY = "";
+      var ALGOLIA_APP_ID = "";
+      var ALGOLIA_INDEX_NAME = "";
+      var AZURE_SERVICE_NAME = "";
+      var AZURE_INDEX_NAME = "";
+      var AZURE_QUERY_KEY = "";
+      var BAIDU_API_ID = "";
+      var SEARCH_SERVICE = "hexo" || "hexo";
+      var ROOT = "/" || "/";
+      if (!ROOT.endsWith("/")) ROOT += "/";
+    </script>
+
+    <script async src="../js/index_scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        const $reveal = $(".reveal");
+        if ($reveal.length === 0) return;
+        if (ScrollReveal) {
+          const sr = ScrollReveal({ distance: 0 });
+          sr.reveal(".reveal");
+        }
+      });
+    </script>
+
+    <script src="../js/index_waves.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        Waves.attach(".flat-btn", ["waves-button"]);
+        Waves.attach(".float-btn", ["waves-button", "waves-float"]);
+        Waves.attach(".float-btn-light", [
+          "waves-button",
+          "waves-float",
+          "waves-light"
+        ]);
+        Waves.attach(".flat-box", ["waves-block"]);
+        Waves.attach(".float-box", ["waves-block", "waves-float"]);
+        Waves.attach(".waves-image");
+        Waves.init();
+      });
+    </script>
+    <script src="../js/banner/homepage-top-banner.js"></script>
+
+    <script src="../js/index_clipboard.min.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/clipboard-use.js"></script>
+
+    <!--首页顶部banner-->
+    <script src="../js/banner/homepage-top-banner.js"></script>
+
+    <!--精选标签banner-->
+    <script src="../js/banner/selected-tag-banner.js"></script>
+
+    <!--滚动固定处理-->
+    <script src="../js/scroll/scroll-util.js"></script>
+
+    <!--动画效果-->
+    <script src="../js/animate/animation.js"></script>
+
+    <script>
+      setLoadingBarProgress(100);
+    </script>
+    <!--script引入-->
+    <script type="text/javascript" src="../js/team_jquery.js"></script>
+    <script type="text/javascript" src="../js/team_heightLine.js"></script>
+
+    <script>
+      $(".sNavi li").click(function() {
+        var nIndex = $(this).index();
+        $(this)
+          .addClass("on")
+          .siblings()
+          .removeClass("on");
+        $(".teamInfoBox .tBox")
+          .eq(nIndex)
+          .show()
+          .siblings()
+          .hide();
+      });
+    </script>
+  </body>
 </html>
