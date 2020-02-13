@@ -1,57 +1,478 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<!--author: Meng Jiao
-	date:2020-2-11 20:30 
-	version:1.0.1 -->
-<head>
-<meta charset="utf-8">
-<title>software</title>
-<link rel="stylesheet" type="text/css" href="../css/software.css"/>
-<style type="text/css">
+  <!--author: Meng Jiao
+  date:2020-2-11 20:30 
+  update:2020-2-13 14:23
+	version:1.1.0 -->
+  <head>
+    <meta charset="utf-8" />
+    <title>software</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="../media/images/favicon.ico"
+    />
+    <link rel="stylesheet" href="../css/index_waves.min.css" />
+    <link rel="stylesheet" href="../css/index_all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/otherpages_main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/software.css" />
+    <style type="text/css"></style>
+    <script>
+      function setLoadingBarProgress(num) {
+        document.getElementById("loading-bar").style.width = num + "%";
+      }
+    </script>
+    <script
+    src="../js/index_jquery.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="../js/index_popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="../js/index_bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"
+  ></script>
+  <!--    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+  <!--            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+  <!--            crossorigin="anonymous"></script>-->
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link
+    rel="stylesheet"
+    href="../css/index_bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+  />
 
-</style>
-</head>
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link
+    rel="stylesheet"
+    href="../css/index_bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous"
+  />
+  <!--    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+  <!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>-->
+  <!--引入swiper css-->
+  <link
+      rel="stylesheet"
+      href="../css/index_swiper.min.css"
+    />
+    <!-- 引入swiper js-->
+    <script src="../js/index_swiper.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="../css/index_animate.min.css"
+  />
+  </head>
 
-<body>
+  <body>
+    <!--reference_index_start-->
+    <div class="l_body" style="opacity: 1">
+      <div id="loading-bar-wrapper">
+        <div id="loading-bar" class="pure"></div>
+      </div>
+      <script>
+        setLoadingBarProgress(20);
+      </script>
+      <header class="l_header pure">
+        <div class="wrapper">
+          <div class="nav-main container container--flex">
+            <a class="logo flat-box" href="/">
+              <img class="logo" src="/media/images/index_logo.png" />
+            </a>
+            <div class="menu">
+              <ul class="h-list">
+                <li>
+                  <a id="home" class="nav flat-box" href="/">
+                    <i class="fas fa-rss fa-fw"></i>&nbsp;综合
+                  </a>
+                </li>
+                <li>&nbsp;</li>
+                <div class="dropdown">
+                  <i class="fas fa-folder-open fa-fw"></i>
+                  <span>精彩赛事</span>
+                  <i class="fa fa-caret-down nav-more-i"></i>
+                  <div class="dropdown-content">
+                    <div class="detail-area">
+                      <!--当前是一级分类-->
+                      <h2 class="detail-title-wrapper">
+                        <a
+                          class="detail-title"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >结赛</a
+                        >
+                        <a
+                          class="detail-more"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >更多 ></a
+                        >
+                      </h2>
+                      <div class="detail-content">
+                        <!--查找每个一级分类下所有的二级分类-->
 
-<div class="header">
-  <h1>土木科协</h1>
-</div>
-<!--导航栏-->
-<div class="topnav">
-  <a href="#">主页</a>
-  <a href="#">团队介绍</a>
-  <a href="#">精彩赛事</a>
-  <a href="software.html" style="background: #686262"> 常用软件</a>
-	<a href="#">联系我们</a>
-	</div>
-	
-	
-	
-<div class="leftcolumn" >
-	<p class="rcorners1"  style="text-align: center; font-size: 18px; color: #1D2153 ">软件目录</p>
-    <div class="list">
-<a href="soteware/software_AutoCAD.html">AutoCAD</a>
-  <a href="soteware/software_Solidworks.html">Solidworks</a>
-  <a href="#">SketchUp</a>
-  <a href="#">Visual Studio</a></div>
-<p>&nbsp;</p>
-<p class="rcorners1"  style="text-align: center; font-size: 18px; color: #1D2153 ">自制教程</p>
-    <div class="list">
-<a href="#">AutoCAD</a>
-  <a href="#">Solidworks</a>
-  <a href="#">SketchUp</a>
-  <a href="#">Visual Studio</a></div>
+                        <a
+                          class="detail-text"
+                          href="/pages/event/struct-design-competition"
+                          target="_blank"
+                          >结构设计大赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/fun-struct-design-competition"
+                          target="_blank"
+                          >趣味结赛</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="detail-area">
+                      <!--当前是一级分类-->
+                      <h2 class="detail-title-wrapper">
+                        <a
+                          class="detail-title"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >其他赛事</a
+                        >
+                        <a
+                          class="detail-more"
+                          href="/pages/event.html"
+                          target="_blank"
+                          >更多 ></a
+                        >
+                      </h2>
+                      <div class="detail-content">
+                        <!--查找每个一级分类下所有的二级分类-->
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/traffic-competition"
+                          target="_blank"
+                          >交赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/future-competition"
+                          target="_blank"
+                          >未创</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/house-competition"
+                          target="_blank"
+                          >房赛</a
+                        >
+
+                        <a
+                          class="detail-text"
+                          href="/pages/event/floor-competition"
+                          target="_blank"
+                          >地创</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li>&nbsp;</li>
+                <li>
+                  <a id="tags" class="nav flat-box" href="/pages/team.html">
+                    <i class="fas fa-user fa-fw"></i>&nbsp;团队介绍
+                  </a>
+                </li>
+
+                <li>
+                  <a id="tags" class="nav flat-box" href="/pages/software.html">
+                    <i class="fas fa-hashtag fa-fw"></i>&nbsp;常用软件
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    id="archives"
+                    class="nav flat-box"
+                    href="/pages/contact.html"
+                  >
+                    <i class="fas fa-archive fa-fw"></i>&nbsp;联系我们
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="m_search">
+              <form name="searchform" class="form u-search-form">
+                <input
+                  type="text"
+                  class="input u-search-input"
+                  placeholder="搜索"
+                />
+                <span class="icon"><i class="fas fa-search fa-fw"></i></span>
+              </form>
+            </div>
+
+            <ul class="switcher h-list">
+              <li class="s-search">
+                <a class="fas fa-search fa-fw" href="javascript:void(0)"></a>
+              </li>
+
+              <li class="s-menu">
+                <a class="fas fa-bars fa-fw" href="javascript:void(0)"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-sub container container--flex">
+            <a class="logo flat-box"></a>
+            <ul class="switcher h-list">
+              <li class="s-comment">
+                <a
+                  class="flat-btn fas fa-comments fa-fw"
+                  href="javascript:void(0)"
+                ></a>
+              </li>
+              <li class="s-toc">
+                <a
+                  class="flat-btn fas fa-list fa-fw"
+                  href="javascript:void(0)"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <aside class="menu-phone">
+        <header>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a id="home" class="nav flat-box" href="/">
+                  <i class="fas fa-rss fa-fw"></i>&nbsp;综合
+                </a>
+              </li>
+
+              <li>
+                <a
+                  id="categories"
+                  class="nav flat-box"
+                  href="/pages/event.html"
+                >
+                  <i class="fas fa-folder-open fa-fw"></i>&nbsp;精彩赛事
+                </a>
+              </li>
+
+              <li>
+                <a id="tags" class="nav flat-box" href="/pages/team.html">
+                  <i class="fas fa-user fa-fw"></i>&nbsp;团队介绍
+                </a>
+              </li>
+
+              <li>
+                <a id="tags" class="nav flat-box" href="/pages/software.html">
+                  <i class="fas fa-hashtag fa-fw"></i>&nbsp;常用软件
+                </a>
+              </li>
+
+              <li>
+                <a
+                  id="archives"
+                  class="nav flat-box"
+                  href="/pages/contact.html"
+                >
+                  <i class="fas fa-archive fa-fw"></i>&nbsp;联系我们
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </aside>
+
+      <script>
+        setLoadingBarProgress(40);
+      </script>
+    </div>
+    <!--reference_index_end-->
+  <div class="box-need-padding">
+    <div class="leftcolumn">
+      <p
+        class="rcorners1"
+        style="text-align: center; font-size: 18px; color: #1D2153 "
+      >
+        软件目录
+      </p>
+      <div class="list">
+        <a href="software/software_AutoCAD.html">AutoCAD</a>
+        <a href="software/software_Solidworks.html">Solidworks</a>
+        <a href="#">SketchUp</a>
+        <a href="#">Visual Studio</a>
+      </div>
+      <p>&nbsp;</p>
+      <p
+        class="rcorners1"
+        style="text-align: center; font-size: 18px; color: #1D2153 "
+      >
+        自制教程
+      </p>
+      <div class="list">
+        <a href="#">AutoCAD</a>
+        <a href="#">Solidworks</a>
+        <a href="#">SketchUp</a>
+        <a href="#">Visual Studio</a>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <h1>软件目录</h1>
+      <p>本网站提供软件安装包及安装流程，并附有学习教程。</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
   </div>
-<div class="rightcolumn">
-  <h1>软件目录</h1>
-  <p>本网站提供软件安装包及安装流程，并附有学习教程。</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
+    <!--footer引入-->
+    <footer
+      id="footer"
+      class="clearfix"
+      style="padding-top: 10px; height: 150px"
+    >
+      <p><a href="/">土木系、建管系科协</a>专注于科研，赛事方面的服务</p>
 
-</div>
-</body>
+      <div class="social-wrapper">
+        <a
+          href="mailto:cecmsast@163.com"
+          class="social fas fa-envelope flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+
+        <!--<a
+          href="#"
+          class="social fab fa-github flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>-->
+
+        <a
+          href="/pages/team.html"
+          class="social fa fa-user flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+
+        <a
+          href="/pages/software.html"
+          class="social fa fa-folder flat-btn"
+          target="_blank"
+          rel="external"
+        ></a>
+      </div>
+
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <!--CNZZ统计-->
+      <div>
+        <script type="text/javascript">
+          var cnzz_protocol =
+            "https:" == document.location.protocol ? "https://" : "http://";
+          document.write(
+            unescape(
+              "%3Cspan id='cnzz_stat_icon_1276848887'%3E%3C/span%3E%3Cscript src='" +
+                cnzz_protocol +
+                "s5.cnzz.com/z_stat.php%3Fid%3D1276848887%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"
+            )
+          );
+        </script>
+      </div>
+    </footer>
+    <!--footer引入-->
+    <script>
+      setLoadingBarProgress(80);
+    </script>
+    <script src="../js/index_jquery.min.js"></script>
+
+    <script>
+      var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+      var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+      var ALGOLIA_API_KEY = "";
+      var ALGOLIA_APP_ID = "";
+      var ALGOLIA_INDEX_NAME = "";
+      var AZURE_SERVICE_NAME = "";
+      var AZURE_INDEX_NAME = "";
+      var AZURE_QUERY_KEY = "";
+      var BAIDU_API_ID = "";
+      var SEARCH_SERVICE = "hexo" || "hexo";
+      var ROOT = "/" || "/";
+      if (!ROOT.endsWith("/")) ROOT += "/";
+    </script>
+
+    <script async src="../js/index_scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        const $reveal = $(".reveal");
+        if ($reveal.length === 0) return;
+        if (ScrollReveal) {
+          const sr = ScrollReveal({ distance: 0 });
+          sr.reveal(".reveal");
+        }
+      });
+    </script>
+
+    <script src="../js/index_waves.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        Waves.attach(".flat-btn", ["waves-button"]);
+        Waves.attach(".float-btn", ["waves-button", "waves-float"]);
+        Waves.attach(".float-btn-light", [
+          "waves-button",
+          "waves-float",
+          "waves-light"
+        ]);
+        Waves.attach(".flat-box", ["waves-block"]);
+        Waves.attach(".float-box", ["waves-block", "waves-float"]);
+        Waves.attach(".waves-image");
+        Waves.init();
+      });
+    </script>
+    <script src="../js/banner/homepage-top-banner.js"></script>
+    
+    <script src="../js/index_clipboard.min.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/clipboard-use.js"></script>
+
+    <!--首页顶部banner-->
+    <script src="../js/banner/homepage-top-banner.js"></script>
+
+    <!--精选标签banner-->
+    <script src="../js/banner/selected-tag-banner.js"></script>
+
+    <!--滚动固定处理-->
+    <script src="../js/scroll/scroll-util.js"></script>
+
+    <!--动画效果-->
+    <script src="../js/animate/animation.js"></script>
+
+    <script>
+      setLoadingBarProgress(100);
+    </script>
+<!--script引入-->
+    
+  </body>
 </html>
