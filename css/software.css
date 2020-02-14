@@ -7,28 +7,11 @@
 }
 		
 body {
-  font-family: Arial;
-  background:#F1F1F1;
+  background:#EFEFEF;
 	margin-left: 0px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-}
-
-.box-need-padding{
-  padding: 10px;
-}
-
-/* 头部标题 */
-.header {
-  padding: 15px;
-  text-align: center;
-  background: white;
-}
- 
-.header h1 {
-    font-size: 40px;
-    text-align: left;
 }
  
 /* 导航条 */
@@ -37,75 +20,141 @@ body {
   background-color: #333;
 }
  
-/* 导航条链接 */
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
- 
-/* 链接颜色修改 */
-
-.topnav a:hover {
-  background-color: #686262;
-  color: #FFFFFF;
-}
 
 
 
 /*目录*/
  .list{
 	overflow: hidden;
-	 border-style: solid;
-	border-width:2px ;
-	border-color: #1D2153;
+    background-color: #EFEFEF;
+	 margin-left: 50px;
+	 margin-top: 15px;
 		}
+/*目录标题*/
+.list p
+{
+	display: block;
+  color: #1393F1;
+	font-size: 20px;
+	background-color: #FFFFFF;
+  padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+  margin: 2px;
+  text-decoration: none;
+}
 /*目录链接*/
 .list a {
   display: block;
-  color: #f2f2f2;
-	background-color: #1D2153;
-  text-align: center;
-  padding: 14px 16px;
+  color: #3F3F3F;
+	font-size: 20px;
+	background-color: #FFFFFF;
+  padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
   margin: 2px;
   text-decoration: none;
 }	
-	/* 目录颜色修改 */
+	/* 目录链接颜色修改 */
 .list a:hover {
-  background-color: #193E73;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #1393F1;
+  border-left-style: solid;
+	border-left-color: #1393F1;
+	
+}
+/*目录链接的活跃状态*/
+.list .active
+ {
+  background-color: #FFFFFF;
+  color: #1393F1;
+  border-left-style: solid;
+	border-left-color: #1393F1;
+	
 }
  
 /* 左侧栏 */
 .leftcolumn {   
   float: left;
   width: 25%;
-  margin-top: 10px;
-  margin-bottom: 100px;
-	background-color: #F1F1F1;
+	background-color: #EFEFEF;
 }
  
 /* 右侧栏 */
 .rightcolumn {
- float: right;
-  width: 74%;
-  background-color: #FFFFFF;
-   padding-left: 20px;
-   padding-top: 20px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-	border-style: solid;
-	border-width:2px ;
-	border-color: #1D2153;
+ float: left;
+  width: 75%;
+  background-color: #EFEFEF;
 }
+
+.install{
+	background-color: #FFFFFF;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-right: 30px;
+	padding: 20px;
+	}
+.course
+{
+	background-color: #FFFFFF;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-right: 30px;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+/*文章*/
+.article
+{
+	padding-left: 20px;
+}
+/*文章标题*/
+.article h1
+{
+	color: #000000;
+	font-size: 20px;
+	margin: 1px;
+}
+/*文章标题链接*/
+.article a:link
+{
+	text-decoration: none;
+	color: #000000;
+}
+/*标题链接改变*/
+.article a:hover
+{
+	color: #0080FF;
+	text-decoration:underline;
+}
+/*标题链接点击后颜色不变*/
+.article a:visited
+{
+	color: #0080FF;
+	text-decoration:underline;
+}
+/*文章说明*/
+.article .description
+{
+	color: #929292;
+	font-size: 15px;
+	margin: 1px;
+}
+/*文章时间*/
+.article .date
+{
+	color: #929292;
+	font-size: 13px;
+	margin-left: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 /*文字和标题*/
 h1{
 	font-family:Times, "Times New Roman", "serif";
 	font-size: 40px;
+	margin-top: 10px;
 }
 
 h2{
@@ -117,35 +166,11 @@ p{
 	font-size:15px;
 	margin-bottom: 15px;
 }
-/*列表*/
-.ulone li{
-	font-family: Cambria, "Hoefler Text", "Liberation Serif";
-	font-size: 20px;
-	margin-bottom: 10px;
-	
+
+/*水平线*/
+hr
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-
-
-
-/*圆角*/
-.rcorners1 {
-    border-radius: 3px;
-    border: 2px solid #1D2153;
-    padding: 5px; 
-	margin:0px 0px 2px 0px;
-    width: 100%; 
-	background-color: #FEFEFE;
-}
- 
-
- 
-/* 底部 */
-.footer {
-  padding: 0px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-	height: 200px;
-}
-
 
