@@ -69,7 +69,7 @@ new function(){
 									if(stylea.paddingBottom)newheight -= stylea.paddingBottom.replace("px","");
 									if(stylea.borderTopWidth && stylea.borderTopWidth != "medium")newheight-= stylea.borderTopWidth.replace("px","");
 									if(stylea.borderBottomWidth && stylea.borderBottomWidth != "medium")newheight-= stylea.borderBottomWidth.replace("px","");
-									CCN[j].style.height =newheight+"px";
+									//CCN[j].style.height =newheight+"px";
 								}
 							}
 						}
@@ -87,7 +87,7 @@ new function(){
 									if(stylea.paddingBottom)newheight-= stylea.paddingBottom.replace("px","");
 									if(stylea.borderTopWidth && stylea.borderTopWidth != "medium")newheight-= stylea.borderTopWidth.replace("px","")
 									if(stylea.borderBottomWidth && stylea.borderBottomWidth != "medium")newheight-= stylea.borderBottomWidth.replace("px","");
-									objCN[key][i].style.height =newheight+"px";
+									//objCN[key][i].style.height =newheight+"px";
 							}
 						}
 					}
