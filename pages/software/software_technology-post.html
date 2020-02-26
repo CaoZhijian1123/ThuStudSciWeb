@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <!--
-    author: 
-    date: 2020-2-8 11:38
-    update: 2020-2-12 21:48
-    version: 1.1.0
-  -->
+  <!--author: Meng Jiao
+	date:2020-2-11 20:30 
+	version:1.0.1 -->
   <head>
     <meta name="generator" content="Hexo 3.8.0" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>
-      精彩赛事
+      技术贴整理
     </title>
 
     <meta name="keywords" content="技术;科研;学习;软件;" />
@@ -39,6 +36,7 @@
     />
 
     <link rel="stylesheet" href="/css/index_main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/software.css" />
 
     <script>
       function setLoadingBarProgress(num) {
@@ -320,63 +318,48 @@
       <!-- 顶部-->
     </div>
     <!--插入代码-->
-    <script type="text/javascript" src="../js/team_jquery.js"></script>
-
-    <div class="lBox">
-      <ul class="sNavi">
-        结构设计大赛
-        <li>赛题回顾</li>
-        <li class="on">照片集锦</li>
-        交通科技竞赛
-        <li>赛题回顾</li>
-        <li>照片集锦</li>
-        未来城市与基础建设创新大赛
-        <li>赛题回顾</li>
-        <li>照片集锦</li>
-        房地产创新创业邀请赛
-        <li>赛题回顾</li>
-        <li>照片集锦</li>
-        趣味结赛
-        <li>赛题回顾</li>
-        <li>照片集锦</li>
-        地下空间创意大赛
-        <li>赛题回顾</li>
-        <li>照片集锦</li>
-      </ul>
-    </div>
-    <div class="rBox">
-      <div class="libaoBigBox">
-        <div class="yxjsbox libaoBox" style="display: block;">
-          <h1 class="bt">结构设计大赛赛题</h1>
+    <div class="box-need-padding">
+      <div class="leftcolumn">
+        <div class="list">
+          <p>软件目录</p>
+          <a href="software_AutoCAD.html">AutoCAD</a>
+          <a href="#">Solidworks</a> <a href="#">SketchUp</a>
+          <a href="#">Visual Studio</a>
         </div>
-        <div class="libaoBox" style="display: none;">结构设计大赛照片</div>
-        <div class="libaoBox" style="display: none;">交赛赛题</div>
-        <div class="libaoBox" style="display: none;">交赛照片</div>
-        <div class="libaoBox" style="display: none;">未创赛题</div>
-        <div class="libaoBox" style="display: none;">未创照片</div>
-        <div class="libaoBox" style="display: none;">房赛赛题</div>
-        <div class="libaoBox" style="display: none;">房赛照片</div>
-        <div class="libaoBox" style="display: none;">趣味结赛赛题</div>
-        <div class="libaoBox" style="display: none;">趣味结赛照片</div>
-        <div class="libaoBox" style="display: none;">地创赛题</div>
-        <div class="libaoBox" style="display: none;">地创照片</div>
+        <div class="list">
+          <p>热门教程</p>
+          <a href="software_Office.html">Office系列</a>
+          <a href="#" class="active">技术帖整理</a>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="course">
+          <h1>技术帖</h1>
+          <hr />
+
+          <div class="article">
+            <h1><a href="#">第三期：AutoCAD教学</a></h1>
+            <p class="description">文末提供安装包下载</p>
+            <p class="date">更新于：2020.2.14</p>
+          </div>
+          <div class="article">
+            <h1><a href="#">第二期：AutoCAD 2017 新增功能解析</a></h1>
+            <p class="description">
+              本文整合了AutoCAD 2017 的新增功能，帮助大家更好的使用AutoCAD。
+            </p>
+            <p class="date">更新于：2020.2.14</p>
+          </div>
+          <div class="article">
+            <h1><a href="#">第一期：AutoCAD 2017 新增功能解析</a></h1>
+            <p class="description">
+              本文整合了AutoCAD 2017 的新增功能，帮助大家更好的使用AutoCAD。
+            </p>
+            <p class="date">更新于：2020.2.14</p>
+          </div>
+          <p><a href="#" style="color: #0080FF">更多>></a></p>
+        </div>
       </div>
     </div>
-    <script>
-      $(".sNavi li").click(function() {
-        var nIndex = $(this).index();
-        $(this)
-          .addClass("on")
-          .siblings()
-          .removeClass("on");
-        $(".libaoBigBox .libaoBox")
-          .eq(nIndex)
-          .show()
-          .siblings()
-          .hide();
-      });
-    </script>
-
     <footer
       id="footer"
       class="clearfix"
