@@ -6,25 +6,29 @@
     update: 2020-2-12 21:48
     version: 1.1.0
   -->
- <head>
-  <title>联系我们</title>
+  <head>
+    <title>联系我们</title>
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="/media/images/favicon.ico"
+    />
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
 
-  <style>
-    body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+        font-family: sans-serif;
 
-    font-family: sans-serif;
+        background: #ffffff url("../media/images/contact_dudu.jpg") no-repeat;
+        /*opacity: 0.5;*/
+        /*filter:Alpha(opacity=50)*/
+        /*!*background-size: cover;*!*/
+      }
 
-    background: #ffffff  url("../media/images/contact_dudu.jpg") no-repeat;
-    /*opacity: 0.5;*/
-    /*filter:Alpha(opacity=50)*/
-    /*!*background-size: cover;*!*/
-}
-
-/* div{
+      /* div{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -33,80 +37,73 @@
     filter:Alpha(opacity=80);
 } */
 
-.box{
-    width: 95%;
-    height: 30%;
-    /* height: 70%; */
-    padding:30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: #7c7373;
-    text-align: center;
-    border: 10px solid #3499db;
-    opacity: 0.8;
-    filter:Alpha(opacity=100)
+      .box {
+        width: 95%;
+        height: 30%;
+        /* height: 70%; */
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #7c7373;
+        text-align: center;
+        border: 10px solid #3499db;
+        opacity: 0.8;
+        filter: Alpha(opacity=100);
+      }
 
-}
+      .center {
+        left: 50%;
+        top: 50%;
+      }
+      .title_zh {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 100px;
+        opacity: 1;
+      }
 
-.center{
-  left: 50%;
-  top: 50%;
-}
-.title_zh{
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size:100px;
-    opacity: 1;
-}
+      .mail {
+        font-size: 40px;
+        opacity: 1;
+      }
+      .title_en {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 50px;
+        opacity: 1;
+      }
+      a:link {
+        color: white;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: blueviolet;
+        text-decoration: none;
+      }
+      a:visited {
+        color: wheat;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
 
-.mail{
-  font-size: 40px;
-  opacity: 1;
-}
-.title_en{
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size:50px;
-  opacity: 1;
-}
-a:link{
-  color: white;
-  text-decoration: underline;
-}
-a:hover{
-  color: blueviolet;
-  text-decoration: none;
-}
-a:visited{
-  color: wheat;
-  text-decoration: underline;
-}
-
-  </style>
-
- </head>
-  
   <body>
-    <div>
-     
-    </div>   
+    <div></div>
   </body>
 
   <body>
     <div class="box">
-    <div class="center">
+      <div class="center">
+        <div class="title_zh">联系我们</div>
+        <div class="title_en">CONTACT US</div>
+        <br />
 
-      <div class="title_zh">联系我们</div>
-      <div class="title_en">CONTACT US</div>
-      <br/>
-
-      <span class="mail"><a href="mailto:cecmsast@163.com">科协公邮</a></span>
-   
+        <span class="mail"><a href="mailto:cecmsast@163.com">科协公邮</a></span>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>
