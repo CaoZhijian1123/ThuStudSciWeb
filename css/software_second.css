@@ -1,0 +1,115 @@
+/* CSS Document */
+	/*author: Meng Jiao
+	date:2020-2-19 15:21
+	version:1.0.1*/
+
+* {
+  box-sizing: border-box;
+}
+body
+{
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+.topcolumn
+{
+	height: 300px;
+	background-color: #F8F8F9;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+    border-bottom-color: #B9B9B9;
+	padding-left: 100px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.topcolumn .header
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 50px;
+	color: #000000;
+}
+.topcolumn .description
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+	color: #ADADAD;
+}
+
+.leftcolumn
+{
+	width: 70%;
+	border-right-style: solid;
+	border-right-color: #B9B9B9;
+	border-right-width: 2px;
+	background-color: #FFFFFF;
+	float:left;
+	padding-left: 100px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.leftcolumn .content
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	color: #373737;
+}
+
+.rightcolumn
+{
+	width: 30%;
+	background-color: #FFFFFF;
+	float:left;
+	padding-left:50px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.rightcolumn .header
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:25px;
+	color: #000000;
+}
+
+/*相关推荐*/
+
+.bigbox
+{
+	height: 75px;
+	width: 300px;
+	background-color: #FFFFFF;
+}
+
+.bigbox .logo
+{
+	float:left;
+	height: 75px;
+	width:75px;
+}
+.bigbox .text
+{
+	height: 75px;
+	width: 225px;
+	background-color: #FFFFFF;
+	float:left;
+	font-size: 20px;
+}
+.bigbox .text a
+{
+	color: #0B85FF;
+	text-decoration:none;
+}
+
+.bigbox .text a:hover
+{
+	color: #0B85FF;
+		text-decoration: underline;
+}
+
+.footer
+{
+	height: 100px;
+	background: #C1C1C1;
+}
+
+
